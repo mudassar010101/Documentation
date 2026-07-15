@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Messenger | NexCognit Docs</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">NexCognit Docs</div>
+        <nav class="nav-links">
+          <a class="nav-link" href="../../index.html">Overview</a>
+          <a class="nav-link" href="../dashboard.html">Dashboard</a>
+          <a class="nav-link" href="../leads.html">Leads</a>
+          <a class="nav-link" href="../pipeline.html">Pipeline</a>
+          <a class="nav-link" href="../conversations.html">Conversations</a>
+          <a class="nav-link" href="../agent-config.html">Agent Config</a>
+          <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+          <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+          <a class="nav-link" href="../media-library.html">Media Library</a>
+          <a class="nav-link" href="../integrations.html">Integrations</a>
+          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
+            <span>Channels</span>
+            <span class="nav-group-icon" aria-hidden="true"></span>
+          </button>
+          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+            <a class="nav-link" href="index.html">Channel Overview</a>
+            <a class="nav-link" href="website-chat.html">Website</a>
+            <a class="nav-link" href="whatsapp.html">WhatsApp</a>
+            <a class="nav-link" href="telegram.html">Telegram</a>
+            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="facebook" aria-expanded="false" aria-controls="facebook-nav">
+              <span>Facebook</span>
+              <span class="nav-group-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-subnav nav-subnav-nested" id="facebook-nav" data-nav-panel="facebook">
+              <a class="nav-link" href="facebook-messenger.html#meta-developers">Open Meta for Developers</a>
+              <a class="nav-link" href="facebook-messenger.html#create-app">Create New App</a>
+              <a class="nav-link" href="facebook-messenger.html#select-usecases">Select Use Cases</a>
+              <a class="nav-link" href="facebook-messenger.html#publish-app">Publish the App</a>
+              <a class="nav-link" href="facebook-messenger.html#add-permission">Add Permission</a>
+              <a class="nav-link" href="facebook-messenger.html#webhook-token">Webhook &amp; Verify Token</a>
+              <a class="nav-link" href="facebook-messenger.html#connect-page">Connect Facebook Page</a>
+              <a class="nav-link" href="facebook-messenger.html#subscribe-messages">Subscribe to Messages</a>
+              <a class="nav-link" href="facebook-messenger.html#access-token">Copy Page Access Token</a>
+              <a class="nav-link" href="facebook-messenger.html#connect-nexcognit">Connect to NexCognit</a>
+            </div>
+            <a class="nav-link" href="instagram.html">Instagram</a>
+          </div>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Facebook Messenger</h1>
+          <p>Facebook Messenger lets you connect your business page to NexCognit so visitors can start conversations and receive automated support through Meta’s messaging channel. This guide walks through the setup process from Meta app creation to final connection in NexCognit.</p>
+        </header>
+
+        <section class="content-section">
+          <h2>Prerequisites</h2>
+          <ul>
+            <li>You have access to a Facebook business account and a Facebook Page.</li>
+            <li>You can sign in to Meta for Developers.</li>
+            <li>You are ready to connect the page and complete the Messenger configuration in NexCognit.</li>
+          </ul>
+        </section>
+
+        <section class="content-section" id="meta-developers">
+          <h2>Step 1 — Open Meta for Developers</h2>
+          <p>Open developers.facebook.com in your browser to begin the Facebook Messenger setup process.</p>
+          <img src="../../screenshots/channels/facebook-messenger/01_go_to_meta_page.PNG" alt="Opening Meta for Developers" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 2 — Open My Apps</h2>
+          <p>From the top-right area of the Meta for Developers page, open My Apps.</p>
+          <img src="../../screenshots/channels/facebook-messenger/02_click_my_apps.PNG" alt="Opening My Apps in Meta for Developers" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="create-app">
+          <h2>Step 3 — Create a new app</h2>
+          <p>Create a new Meta app for the Messenger integration.</p>
+          <img src="../../screenshots/channels/facebook-messenger/03_create_new_app.PNG" alt="Creating a new Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 4 — Enter app details</h2>
+          <p>Enter the app name and contact email details required for the new app.</p>
+          <img src="../../screenshots/channels/facebook-messenger/04_enter_app_details.PNG" alt="Entering app details for the new Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="select-usecases">
+          <h2>Step 5 — Select the required use cases</h2>
+          <p>Choose the Facebook Messenger and Instagram related use cases needed for the integration.</p>
+          <img src="../../screenshots/channels/facebook-messenger/05_select_required_usecases.PNG" alt="Selecting required use cases for the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 6 — Select the business</h2>
+          <p>Choose the business account that will own the app.</p>
+          <img src="../../screenshots/channels/facebook-messenger/06_select_business.PNG" alt="Selecting the business account for the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 7 — Continue without extra requirements</h2>
+          <p>If no additional requirement is needed on that screen, continue to the next step.</p>
+          <img src="../../screenshots/channels/facebook-messenger/07_no_requirement_next.PNG" alt="Continuing without extra requirements in the app setup flow" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 8 — Create the app</h2>
+          <p>Confirm the setup and create the Meta app.</p>
+          <img src="../../screenshots/channels/facebook-messenger/08_create_app.PNG" alt="Creating the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 9 — Review the app dashboard</h2>
+          <p>Once the app is created, you will land on the app dashboard.</p>
+          <img src="../../screenshots/channels/facebook-messenger/09_app_dashboard.PNG" alt="Reviewing the Meta app dashboard" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 10 — Open App Settings → Basic</h2>
+          <p>Open the app’s Basic settings from the sidebar.</p>
+          <img src="../../screenshots/channels/facebook-messenger/10_open_app_settings_basic.PNG" alt="Opening Basic settings for the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 11 — Add the privacy policy URL</h2>
+          <p>The app must include a privacy policy URL in the basic settings.</p>
+          <img src="../../screenshots/channels/facebook-messenger/11_enter_privacy_policy_url.PNG" alt="Adding the privacy policy URL to the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 12 — Save the changes</h2>
+          <p>After entering the privacy policy URL, save the app settings.</p>
+          <img src="../../screenshots/channels/facebook-messenger/12_save_basic_settings.PNG" alt="Saving the basic settings for the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 13 — Open the Publish section</h2>
+          <p>Go to the publish section to make the app live.</p>
+          <img src="../../screenshots/channels/facebook-messenger/13_go_to_publish.PNG" alt="Opening the publish settings for the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="publish-app">
+          <h2>Step 14 — Publish the use case</h2>
+          <p>Review and publish the required use case.</p>
+          <img src="../../screenshots/channels/facebook-messenger/14_publish_usecase.PNG" alt="Publishing the use case for the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 15 — Confirm published status</h2>
+          <p>The app should now show a published or live status.</p>
+          <img src="../../screenshots/channels/facebook-messenger/15_status_published.PNG" alt="Confirming the published status of the Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="add-permission">
+          <h2>Step 16 — Add Pages Read Engagement permission</h2>
+          <p>Enable the required page engagement permission from the permissions and features area.</p>
+          <img src="../../screenshots/channels/facebook-messenger/16_open_permissions_add_pages_read_engagement.PNG" alt="Adding the pages read engagement permission" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 17 — Open Messenger API settings</h2>
+          <p>Open Messenger API Settings from the Meta app sidebar.</p>
+          <img src="../../screenshots/channels/facebook-messenger/17_open_messenger_api_settings.PNG" alt="Opening Messenger API settings" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="webhook-token">
+          <h2>Step 18 — Add the webhook URL and verify token</h2>
+          <p>Add the Messenger webhook URL from NexCognit here, along with a verify token. The verify token can be a random value, but it should be saved and used consistently if required by the webhook setup.</p>
+          <img src="../../screenshots/channels/facebook-messenger/18_enter_webhook_url_and_verify_token.PNG" alt="Entering the webhook URL and verify token" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="connect-page">
+          <h2>Step 19 — Connect the Facebook Page</h2>
+          <p>Connect the Facebook Page that will be used with NexCognit.</p>
+          <img src="../../screenshots/channels/facebook-messenger/19_connect_page_to_get_token.PNG" alt="Connecting a Facebook Page" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 20 — Choose the page to connect</h2>
+          <p>Select the correct Facebook Page from the connection flow.</p>
+          <img src="../../screenshots/channels/facebook-messenger/20_select_page_to_connect.PNG" alt="Selecting the Facebook Page to connect" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 21 — Grant permissions</h2>
+          <p>Meta will ask for permission approval during page connection, and you should continue through the permission flow.</p>
+          <img src="../../screenshots/channels/facebook-messenger/21_grant_permissions.PNG" alt="Granting permissions for the Facebook Page connection" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 22 — Add subscriptions</h2>
+          <p>After the page is connected, open the subscription setup.</p>
+          <img src="../../screenshots/channels/facebook-messenger/22_page_connected_add_subscriptions.PNG" alt="Adding subscriptions after connecting the Facebook Page" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="subscribe-messages">
+          <h2>Step 23 — Subscribe to messages</h2>
+          <p>Enable the messages subscription so NexCognit can receive incoming Messenger messages.</p>
+          <img src="../../screenshots/channels/facebook-messenger/23_select_messages_subscription.PNG" alt="Subscribing to messages" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="access-token">
+          <h2>Step 24 — Generate the page access token</h2>
+          <p>The page access token can now be generated for the connected Facebook Page.</p>
+          <img src="../../screenshots/channels/facebook-messenger/24_generate_page_access_token.PNG" alt="Generating the Facebook Page access token" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 25 — Copy the page access token</h2>
+          <p>Copy the generated token because it will be needed in NexCognit.</p>
+          <img src="../../screenshots/channels/facebook-messenger/25_copy_page_access_token.PNG" alt="Copying the Facebook Page access token" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 26 — Open NexCognit Channel Settings</h2>
+          <p>Return to the NexCognit dashboard and open Channel Settings to configure Facebook Messenger.</p>
+          <img src="../../screenshots/channels/facebook-messenger/26_open_nexcognit_channel_settings.PNG" alt="Opening NexCognit Channel Settings" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="connect-nexcognit">
+          <h2>Step 27 — Paste the Page ID and access token in NexCognit</h2>
+          <p>Paste the Facebook Page ID and the generated Page Access Token into the NexCognit Facebook channel configuration to complete the connection.</p>
+          <img src="../../screenshots/channels/facebook-messenger/27_paste_page_id_and_access_token.PNG" alt="Pasting the Page ID and access token in NexCognit" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>How Facebook Messenger works after setup</h2>
+          <p>Once the channel is connected, visitors can start conversations from your Facebook Page and NexCognit can respond with the configured assistant behavior. The conversation is then available in the NexCognit interface for review and follow-up.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>Things to know</h2>
+          <ul>
+            <li>Keep the verify token consistent if your webhook setup requires it.</li>
+            <li>Make sure the Facebook Page is connected and the required permissions are granted.</li>
+            <li>After saving the configuration, test the page by sending a message through Facebook Messenger.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="../../assets/script.js"></script>
+  </body>
+</html>

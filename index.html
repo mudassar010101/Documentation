@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexCognit Docs</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">NexCognit Docs</div>
+        <nav class="nav-links">
+          <a class="nav-link active" href="index.html">Overview</a>
+          <a class="nav-link" href="pages/dashboard.html">Dashboard</a>
+          <a class="nav-link" href="pages/leads.html">Leads</a>
+          <a class="nav-link" href="pages/pipeline.html">Pipeline</a>
+          <a class="nav-link" href="pages/conversations.html">Conversations</a>
+          <a class="nav-link" href="pages/agent-config.html">Agent Config</a>
+          <a class="nav-link" href="pages/product-catalog.html">Product Catalog</a>
+          <a class="nav-link" href="pages/knowledge-base.html">Knowledge Base</a>
+          <a class="nav-link" href="pages/media-library.html">Media Library</a>
+          <a class="nav-link" href="pages/integrations.html">Integrations</a>
+          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
+            <span>Channels</span>
+            <span class="nav-group-icon" aria-hidden="true"></span>
+          </button>
+          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+            <a class="nav-link" href="pages/channels/index.html">Channel Overview</a>
+            <a class="nav-link" href="pages/channels/website-chat.html">Website</a>
+            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="whatsapp" aria-expanded="false" aria-controls="whatsapp-nav">
+              <span>WhatsApp</span>
+              <span class="nav-group-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-subnav nav-subnav-nested" id="whatsapp-nav" data-nav-panel="whatsapp">
+              <a class="nav-link" href="pages/channels/whatsapp.html#introduction">Introduction</a>
+              <a class="nav-link" href="pages/channels/whatsapp.html#facebook-connection">Facebook Connection</a>
+              <a class="nav-link" href="pages/channels/whatsapp.html#business-selection">Business Selection</a>
+              <a class="nav-link" href="pages/channels/whatsapp.html#phone-verification">Phone Verification</a>
+              <a class="nav-link" href="pages/channels/whatsapp.html#finish-setup">Finish Setup</a>
+            </div>
+            <a class="nav-link" href="pages/channels/telegram.html">Telegram</a>
+            <a class="nav-link" href="pages/channels/facebook-messenger.html">Facebook</a>
+            <a class="nav-link" href="pages/channels/instagram.html">Instagram</a>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Welcome to the NexCognit documentation hub</h1>
+          <p>Use the sidebar to navigate through product modules, channel setup, and feature references.</p>
+        </header>
+
+        <section class="hero-card">
+          <h2>What you can find here</h2>
+          <p>This documentation set is organized to help teams understand the platform quickly, from high-level product overview to channel-specific configuration steps.</p>
+        </section>
+
+        <section class="card-grid">
+          <article class="card">
+            <h3>Overview</h3>
+            <p>Start here to learn the purpose and structure of the product experience.</p>
+            <a href="pages/overview.html">Open overview</a>
+          </article>
+          <article class="card">
+            <h3>Channels</h3>
+            <p>Get setup guidance for website, WhatsApp, Telegram, Facebook, and Instagram channels.</p>
+            <a href="pages/channels/index.html">View channels</a>
+          </article>
+          <article class="card">
+            <h3>Integrations</h3>
+            <p>See which systems and services can be connected to extend the workflow.</p>
+            <a href="pages/integrations.html">Open integrations</a>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

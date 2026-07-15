@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram | NexCognit Docs</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">NexCognit Docs</div>
+        <nav class="nav-links">
+          <a class="nav-link" href="../../index.html">Overview</a>
+          <a class="nav-link" href="../dashboard.html">Dashboard</a>
+          <a class="nav-link" href="../leads.html">Leads</a>
+          <a class="nav-link" href="../pipeline.html">Pipeline</a>
+          <a class="nav-link" href="../conversations.html">Conversations</a>
+          <a class="nav-link" href="../agent-config.html">Agent Config</a>
+          <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+          <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+          <a class="nav-link" href="../media-library.html">Media Library</a>
+          <a class="nav-link" href="../integrations.html">Integrations</a>
+          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
+            <span>Channels</span>
+            <span class="nav-group-icon" aria-hidden="true"></span>
+          </button>
+          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+            <a class="nav-link" href="index.html">Channel Overview</a>
+            <a class="nav-link" href="website-chat.html">Website</a>
+            <a class="nav-link" href="whatsapp.html">WhatsApp</a>
+            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="telegram" aria-expanded="false" aria-controls="telegram-nav">
+              <span>Telegram</span>
+              <span class="nav-group-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-subnav nav-subnav-nested" id="telegram-nav" data-nav-panel="telegram">
+              <a class="nav-link" href="telegram.html#search-botfather">Search BotFather</a>
+              <a class="nav-link" href="telegram.html#newbot-command">Create New Bot</a>
+              <a class="nav-link" href="telegram.html#bot-token">Copy Bot Token</a>
+              <a class="nav-link" href="telegram.html#connect-nexcognit">Connect to NexCognit</a>
+              <a class="nav-link" href="telegram.html#test-bot">Test Bot</a>
+            </div>
+            <a class="nav-link" href="facebook-messenger.html">Facebook</a>
+            <a class="nav-link" href="instagram.html">Instagram</a>
+          </div>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Telegram</h1>
+          <p>Telegram lets you connect a bot to NexCognit so customers can start conversations and receive automated responses through Telegram. This guide walks through the setup flow from BotFather to the final connection in NexCognit.</p>
+        </header>
+
+        <section class="content-section">
+          <h2>Prerequisites</h2>
+          <ul>
+            <li>You have access to Telegram.</li>
+            <li>You are signed in to your NexCognit account.</li>
+            <li>You are ready to create a bot and test it after configuration.</li>
+          </ul>
+        </section>
+
+        <section class="content-section" id="search-botfather">
+          <h2>Step 1 — Search for BotFather in Telegram</h2>
+          <p>BotFather is Telegram’s official bot management bot and is used to create a new Telegram bot for NexCognit.</p>
+          <img src="../../screenshots/channels/telegram/01_search_botfather.jpeg" alt="Searching for BotFather in Telegram" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 2 — Start the BotFather chat</h2>
+          <p>Open the BotFather chat and start the conversation.</p>
+          <img src="../../screenshots/channels/telegram/02_start_botfather.jpeg" alt="Starting the BotFather chat" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="newbot-command">
+          <h2>Step 3 — Send the /newbot command</h2>
+          <p>Use the /newbot command to create a new Telegram bot.</p>
+          <img src="../../screenshots/channels/telegram/03_send_newbot_command.jpeg" alt="Sending the /newbot command to BotFather" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 4 — Enter the bot name</h2>
+          <p>Provide a display name for the new Telegram bot.</p>
+          <img src="../../screenshots/channels/telegram/04_enter_bot_name.jpeg" alt="Entering a name for the new Telegram bot" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="bot-token">
+          <h2>Step 5 — Copy the bot token</h2>
+          <p>BotFather generates a bot token after the bot is created, and this token will be needed in NexCognit.</p>
+          <img src="../../screenshots/channels/telegram/05_copy_bot_token.jpeg" alt="Copying the Telegram bot token" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="connect-nexcognit">
+          <h2>Step 6 — Paste the token into NexCognit</h2>
+          <p>Open NexCognit Channel Settings, go to Telegram, and paste the Telegram bot token into the configuration form.</p>
+          <img src="../../screenshots/channels/telegram/06_paste_token_in_nexcognit.PNG" alt="Pasting the Telegram bot token into NexCognit" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 7 — Confirm connected status</h2>
+          <p>After saving the token, NexCognit should show that the Telegram channel is connected.</p>
+          <img src="../../screenshots/channels/telegram/07_connected_status.PNG" alt="Confirming the Telegram channel connection status" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="test-bot">
+          <h2>Step 8 — Send a test message</h2>
+          <p>Send a test message to the Telegram bot and confirm that Iris responds correctly.</p>
+          <img src="../../screenshots/channels/telegram/08_test_message.jpeg" alt="Sending a test message to the Telegram bot" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>How Telegram works after setup</h2>
+          <p>Once the Telegram bot is connected, customers can start a conversation directly in Telegram and NexCognit can respond with the configured assistant behavior. Those conversations can then be reviewed in the NexCognit platform.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>Things to know</h2>
+          <ul>
+            <li>Keep the bot token secure and do not share it publicly.</li>
+            <li>After saving the configuration, test the bot with a simple message.</li>
+            <li>If the bot does not respond, confirm that the token was pasted correctly and that the bot is active.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="../../assets/script.js"></script>
+  </body>
+</html>

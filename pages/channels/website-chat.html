@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Chat | NexCognit Docs</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">NexCognit Docs</div>
+        <nav class="nav-links">
+          <a class="nav-link" href="../../index.html">Overview</a>
+          <a class="nav-link" href="../dashboard.html">Dashboard</a>
+          <a class="nav-link" href="../leads.html">Leads</a>
+          <a class="nav-link" href="../pipeline.html">Pipeline</a>
+          <a class="nav-link" href="../conversations.html">Conversations</a>
+          <a class="nav-link" href="../agent-config.html">Agent Config</a>
+          <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+          <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+          <a class="nav-link" href="../media-library.html">Media Library</a>
+          <a class="nav-link" href="../integrations.html">Integrations</a>
+          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
+            <span>Channels</span>
+            <span class="nav-group-icon" aria-hidden="true"></span>
+          </button>
+          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+            <a class="nav-link" href="index.html">Channel Overview</a>
+            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="website" aria-expanded="false" aria-controls="website-nav">
+              <span>Website</span>
+              <span class="nav-group-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-subnav nav-subnav-nested" id="website-nav" data-nav-panel="website">
+              <a class="nav-link" href="website-chat.html#introduction">Introduction</a>
+              <a class="nav-link" href="website-chat.html#configure-widget">Configure Widget</a>
+              <a class="nav-link" href="website-chat.html#widget-appearance">Widget Appearance</a>
+              <a class="nav-link" href="website-chat.html#copy-embed-code">Copy Embed Code</a>
+              <a class="nav-link" href="website-chat.html#test-widget">Test Widget</a>
+            </div>
+            <a class="nav-link" href="whatsapp.html">WhatsApp</a>
+            <a class="nav-link" href="telegram.html">Telegram</a>
+            <a class="nav-link" href="facebook-messenger.html">Facebook</a>
+            <a class="nav-link" href="instagram.html">Instagram</a>
+          </div>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Website Chat</h1>
+          <p>Website Chat lets you add NexCognit’s AI assistant to your website so visitors can start conversations and get help in real time. This guide walks through the setup steps from the NexCognit dashboard to the live website widget.</p>
+        </header>
+
+        <section class="content-section">
+          <h2>Prerequisites</h2>
+          <ul>
+            <li>You already have access to your NexCognit account.</li>
+            <li>You can edit the HTML of the website where the widget will be installed.</li>
+            <li>You are ready to test the widget after installation.</li>
+          </ul>
+        </section>
+
+        <section class="content-section" id="introduction">
+          <h2>Step 1 — Open Channel Settings</h2>
+          <p>Open Channel Settings in NexCognit and locate the Website Chat channel. This is the entry point for configuring the widget for your website.</p>
+          <img src="../../screenshots/channels/website-chat/01_channel_settings.PNG" alt="Opening Channel Settings in NexCognit" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="configure-widget">
+          <h2>Step 2 — Open Website Chat configuration</h2>
+          <p>Click Configure to open the Website Chat setup screen. From here, you can adjust the widget behavior and prepare the embed code for installation.</p>
+          <img src="../../screenshots/channels/website-chat/02_open_configure.PNG" alt="Opening Website Chat configuration" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="widget-appearance">
+          <h2>Step 3 — Review widget appearance settings</h2>
+          <p>In the configuration screen, review the widget appearance settings. You can adjust options such as the chat button position, chat title, and other visible settings so the widget matches your brand and website design.</p>
+          <img src="../../screenshots/channels/website-chat/03_widget_appearance_settings.PNG" alt="Reviewing Website Chat widget appearance settings" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="copy-embed-code">
+          <h2>Step 4 — Copy the embed snippet</h2>
+          <p>NexCognit provides an embed code snippet for your Website Chat widget. Copy this snippet so it can be added to your website HTML.</p>
+          <img src="../../screenshots/channels/website-chat/04_copy_embed_snippet.PNG" alt="Copying the Website Chat embed snippet" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 5 — Open the website HTML file</h2>
+          <p>Open the HTML file for the website where you want the chat widget to appear. This is where the embed code will be inserted.</p>
+          <img src="../../screenshots/channels/website-chat/05_open_website_html_file.PNG" alt="Opening the website HTML file" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 6 — Paste the snippet before the closing body tag</h2>
+          <p>Paste the embed snippet near the end of the HTML document, just before the closing </body> tag. This ensures the widget loads correctly when the page renders.</p>
+          <img src="../../screenshots/channels/website-chat/06_paste_snippet_before_body_close.PNG" alt="Pasting the Website Chat snippet before the closing body tag" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section" id="test-widget">
+          <h2>Step 7 — Confirm the widget icon appears on the website</h2>
+          <p>Save the file and refresh the website. After the page loads, the chat widget icon should appear and be ready for visitors to use.</p>
+          <img src="../../screenshots/channels/website-chat/07_widget_icon_visible.PNG" alt="Confirming the Website Chat widget icon appears on the website" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 8 — Test a conversation</h2>
+          <p>Send a test message through the widget to confirm that the integration is working. If the setup is correct, Iris should respond and the conversation should appear in NexCognit.</p>
+          <img src="../../screenshots/channels/website-chat/08_widget_conversation_test.PNG" alt="Testing a conversation through the Website Chat widget" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>How Website Chat works after setup</h2>
+          <p>Once the widget is installed, visitors can start a conversation directly from your website. NexCognit uses the configured settings and knowledge to respond in a helpful, branded way, and each conversation can be reviewed in the platform.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>Things to know</h2>
+          <ul>
+            <li>Make sure the embed snippet is placed before the closing body tag so the widget loads correctly.</li>
+            <li>Refresh the website after saving changes to confirm the widget appears.</li>
+            <li>If the chat icon does not appear, double-check the code placement and confirm the website page has reloaded successfully.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="../../assets/script.js"></script>
+  </body>
+</html>
