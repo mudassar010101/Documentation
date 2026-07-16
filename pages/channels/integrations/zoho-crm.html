@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoho CRM | NexCognit Docs</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">NexCognit Docs</div>
+        <nav class="nav-links">
+          <a class="nav-link" href="../../index.html">Overview</a>
+          <a class="nav-link" href="../dashboard.html">Dashboard</a>
+          <a class="nav-link" href="../leads.html">Leads</a>
+          <a class="nav-link" href="../pipeline.html">Pipeline</a>
+          <a class="nav-link" href="../conversations.html">Conversations</a>
+          <a class="nav-link" href="../agent-config.html">Agent Config</a>
+          <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+          <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+          <a class="nav-link" href="../media-library.html">Media Library</a>
+          <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false" aria-controls="integrations-nav">
+            <span>Integrations</span>
+            <span class="nav-group-icon" aria-hidden="true"></span>
+          </button>
+          <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+            <a class="nav-link" href="../integrations.html">Integration Overview</a>
+            <a class="nav-link" href="zoho-crm.html">Zoho CRM</a>
+          </div>
+          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
+            <span>Channels</span>
+            <span class="nav-group-icon" aria-hidden="true"></span>
+          </button>
+          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+            <a class="nav-link" href="../channels/index.html">Channel Overview</a>
+            <a class="nav-link" href="../channels/website-chat.html">Website</a>
+            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="whatsapp" aria-expanded="false" aria-controls="whatsapp-nav">
+              <span>WhatsApp</span>
+              <span class="nav-group-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-subnav nav-subnav-nested" id="whatsapp-nav" data-nav-panel="whatsapp">
+              <a class="nav-link" href="../channels/whatsapp.html#introduction">Introduction</a>
+              <a class="nav-link" href="../channels/whatsapp.html#facebook-connection">Facebook Connection</a>
+              <a class="nav-link" href="../channels/whatsapp.html#business-selection">Business Selection</a>
+              <a class="nav-link" href="../channels/whatsapp.html#phone-verification">Phone Verification</a>
+              <a class="nav-link" href="../channels/whatsapp.html#finish-setup">Finish Setup</a>
+            </div>
+            <a class="nav-link" href="../channels/telegram.html">Telegram</a>
+            <a class="nav-link" href="../channels/facebook-messenger.html">Facebook</a>
+            <a class="nav-link" href="../channels/instagram.html">Instagram</a>
+          </div>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Zoho CRM</h1>
+          <p>The Zoho CRM integration lets NexCognit send captured leads directly into your Zoho CRM account. This guide walks through connecting Zoho CRM to NexCognit and confirming that leads sync correctly.</p>
+        </header>
+
+        <section class="content-section">
+          <h2>Prerequisites</h2>
+          <ul>
+            <li>Active NexCognit account.</li>
+            <li>Active Zoho CRM account.</li>
+            <li>Permission to authorize third-party integrations.</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <h2>Step 1 — Open Integrations</h2>
+          <p>Open the Integrations section in NexCognit to begin connecting Zoho CRM to your workspace.</p>
+          <img src="../../screenshots/integrations/zoho-crm/01_open_integrations.PNG" alt="Opening the Integrations section in NexCognit" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 2 — Connect Zoho CRM</h2>
+          <p>Select Zoho CRM from the list of available integrations to start the connection flow.</p>
+          <img src="../../screenshots/integrations/zoho-crm/02_connect_zoho_crm.PNG" alt="Selecting Zoho CRM from the integrations list" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 3 — Connect Account using Composio</h2>
+          <p>NexCognit uses Composio to manage the secure connection to Zoho CRM. Choose Connect Account to continue.</p>
+          <img src="../../screenshots/integrations/zoho-crm/03_composio_connect_account.PNG" alt="Connecting an account through Composio" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 4 — Sign in to Zoho CRM</h2>
+          <p>Sign in with the Zoho CRM account you want to connect to NexCognit.</p>
+          <img src="../../screenshots/integrations/zoho-crm/04_sign_in_to_zoho.PNG" alt="Signing in to Zoho CRM" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 5 — Grant Permissions</h2>
+          <p>Review and grant the permissions NexCognit needs to access your Zoho CRM data.</p>
+          <img src="../../screenshots/integrations/zoho-crm/05_grant_permissions.PNG" alt="Granting permissions for the Zoho CRM connection" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 6 — Connection Successful</h2>
+          <p>Once authorization completes, NexCognit confirms that the connection to Zoho CRM was successful.</p>
+          <img src="../../screenshots/integrations/zoho-crm/06_connection_successful.PNG" alt="Confirming a successful Zoho CRM connection" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 7 — Verify Connected Status</h2>
+          <p>Return to the Integrations section in NexCognit and confirm that Zoho CRM now shows as connected.</p>
+          <img src="../../screenshots/integrations/zoho-crm/07_zoho_connected_status.PNG" alt="Verifying the connected status of Zoho CRM" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>Step 8 — View Leads in Zoho CRM</h2>
+          <p>Open Zoho CRM to confirm that leads captured in NexCognit are appearing as expected.</p>
+          <img src="../../screenshots/integrations/zoho-crm/08_view_leads_in_zoho_crm.PNG" alt="Viewing synced leads inside Zoho CRM" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        </section>
+
+        <section class="content-section">
+          <h2>How Zoho CRM Integration Works</h2>
+          <p>Once Zoho CRM is connected, leads captured by NexCognit are sent to your Zoho CRM account automatically. This keeps your sales team working from a single source of truth without needing to manually export or re-enter lead data.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>Things to Know</h2>
+          <ul>
+            <li>Keep your Zoho CRM credentials secure and do not share them outside your organization.</li>
+            <li>If the connection is revoked or expires in Zoho, you will need to reconnect it from the Integrations section.</li>
+            <li>After connecting, confirm that new leads appear correctly in Zoho CRM before relying on the integration for production use.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="../../assets/script.js"></script>
+  </body>
+</html>

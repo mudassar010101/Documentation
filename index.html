@@ -20,7 +20,14 @@
           <a class="nav-link" href="pages/product-catalog.html">Product Catalog</a>
           <a class="nav-link" href="pages/knowledge-base.html">Knowledge Base</a>
           <a class="nav-link" href="pages/media-library.html">Media Library</a>
-          <a class="nav-link" href="pages/integrations.html">Integrations</a>
+          <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false" aria-controls="integrations-nav">
+            <span>Integrations</span>
+            <span class="nav-group-icon" aria-hidden="true"></span>
+          </button>
+          <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+            <a class="nav-link" href="pages/integrations.html">Integration Overview</a>
+            <a class="nav-link" href="pages/integrations/zoho-crm.html">Zoho CRM</a>
+          </div>
           <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
             <span>Channels</span>
             <span class="nav-group-icon" aria-hidden="true"></span>
@@ -117,6 +124,15 @@
             <h3>Integrations</h3>
             <p>See which systems and services can be connected to extend the workflow.</p>
             <a href="pages/integrations.html">Open Integrations</a>
+          </article>
+        </section>
+
+        <h2>Integrations</h2>
+        <section class="card-grid">
+          <article class="card">
+            <h3>Zoho CRM</h3>
+            <p>Send captured leads directly into your Zoho CRM account.</p>
+            <a href="pages/integrations/zoho-crm.html">Set up Zoho CRM</a>
           </article>
         </section>
 

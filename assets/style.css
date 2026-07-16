@@ -132,7 +132,8 @@ a:hover {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
   width: 100%;
   font-family: inherit;
   text-align: left;
@@ -145,16 +146,17 @@ a:hover {
 }
 
 .nav-group-icon {
+  flex: 0 0 auto;
   width: 7px;
   height: 7px;
   border-right: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   transition: transform 180ms ease;
 }
 
 .nav-group[aria-expanded="true"] .nav-group-icon {
-  transform: rotate(225deg);
+  transform: rotate(45deg);
 }
 
 .nav-subnav {
