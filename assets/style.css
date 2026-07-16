@@ -21,6 +21,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -43,11 +52,12 @@ body {
 }
 
 .brand {
-  font-size: 1.24rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 24px;
-  padding: 4px 6px;
-  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+  padding: 0 6px 18px;
+  letter-spacing: -0.03em;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .nav-links {
@@ -78,24 +88,35 @@ body {
 .nav-link {
   color: #cbd5e1;
   text-decoration: none;
-  padding: 10px 12px;
-  border-radius: 10px;
-  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
-  font-size: 0.96rem;
-  line-height: 1.4;
+  padding: 11px 14px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  position: relative;
 }
 
 .nav-link:hover {
-  background: rgba(255,255,255,0.1);
-  color: white;
-  transform: translateX(2px);
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  transform: translateX(6px);
+  text-decoration: none;
 }
 
 .nav-link.active {
-  background: linear-gradient(90deg, rgba(47,111,237,0.24), rgba(47,111,237,0.16));
+  background: linear-gradient(
+      90deg,
+      rgba(37,99,235,.35),
+      rgba(37,99,235,.15)
+  );
+
   color: white;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
-  font-weight: 600;
+
+  font-weight: 700;
+
+  border-left: 4px solid #60a5fa;
+
+  padding-left: 10px;
 }
 
 .nav-group {
@@ -180,12 +201,13 @@ body {
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 28px 32px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .topbar h1 {
   margin: 0 0 10px;
   font-size: 2rem;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
@@ -202,36 +224,62 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.hero-card { margin-bottom: 20px; }
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+  border-color: var(--accent);
+}
+
+.hero-card { margin-bottom: 28px; }
 
 h1, h2, h3 {
   line-height: 1.25;
   letter-spacing: -0.01em;
   margin-top: 0;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
+  color: var(--text);
 }
 
 h3 {
-  font-size: 1.08rem;
+  font-size: 1.05rem;
+  font-weight: 600;
   margin-bottom: 8px;
+}
+
+/* Top-level section headers (e.g. "Platform Guides", "Channel Integrations")
+   get stronger visual separation than in-page step headings, so a long
+   guide with many <h2> steps doesn't repeat a heavy divider every time. */
+.main-content > h2 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--border);
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
+  margin-bottom: 8px;
 }
 
 .card h3 {
   margin-top: 0;
+}
+
+.card p {
+  color: var(--muted);
 }
 
 .card a {
@@ -240,12 +288,23 @@ h3 {
   text-decoration: none;
 }
 
+.card a:hover {
+  text-decoration: underline;
+}
+
 .content-section {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 24px 28px;
-  margin-bottom: 18px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.content-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
 }
 
 .content-section p,
@@ -277,19 +336,89 @@ h3 {
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin: 18px auto 6px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  object-fit: contain;
+  margin: 20px auto 8px;
+  padding: 10px;
   background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  object-fit: contain;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .content-section img:hover {
   transform: translateY(-1px) scale(1.01);
-  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
 }
+
+/* ============ Homepage: eyebrow label ============ */
+.docs-eyebrow {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+/* ============ Dark theme ============ */
+:root[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #131c2e;
+  --surface-2: #1b2740;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #2a3854;
+  --accent: #5b9dff;
+  --accent-dark: #8fc2ff;
+}
+
+body,
+.topbar,
+.hero-card,
+.card,
+.content-section {
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+
+/* ============ Theme toggle button ============ */
+.topbar {
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
@@ -302,4 +431,8 @@ h3 {
   }
   .main-content { padding: 20px 16px 32px; }
   .topbar, .content-section { padding: 20px; }
+  .theme-toggle {
+    top: 16px;
+    right: 16px;
+  }
 }

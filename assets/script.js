@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initActiveNavigation();
   initCollapsibleNavigation();
   initScrollSpy();
@@ -135,4 +136,56 @@ function initScrollSpy() {
   }, { passive: true });
 
   updateActiveLink();
+}
+
+// ============ Global light/dark theme ============
+const THEME_STORAGE_KEY = 'nexcognit.theme';
+
+function initThemeToggle() {
+  applyStoredTheme();
+
+  const topbar = document.querySelector('.topbar');
+  if (!topbar) return;
+
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'theme-toggle';
+  toggle.setAttribute('aria-label', 'Toggle dark mode');
+  toggle.innerHTML = `
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  `;
+
+  toggle.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    setTheme(isDark ? 'light' : 'dark');
+  });
+
+  topbar.appendChild(toggle);
+}
+
+function applyStoredTheme() {
+  let stored = null;
+  try {
+    stored = localStorage.getItem(THEME_STORAGE_KEY);
+  } catch {
+    stored = null;
+  }
+  setTheme(stored === 'dark' ? 'dark' : 'light', { skipStorageWrite: true });
+}
+
+function setTheme(theme, options = {}) {
+  document.documentElement.setAttribute('data-theme', theme);
+  if (!options.skipStorageWrite) {
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, theme);
+    } catch {
+      // Theme still applies for the current page load if storage is unavailable.
+    }
+  }
 }
