@@ -1,93 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Knowledge Base | NexCognit Docs</title>
-    <link rel="stylesheet" href="../assets/style.css" />
-  </head>
-  <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="brand">NexCognit Docs</div>
-        <nav class="nav-links">
-          <a class="nav-link" href="../index.html">Overview</a>
-          <a class="nav-link" href="dashboard.html">Dashboard</a>
-          <a class="nav-link" href="leads.html">Leads</a>
-          <a class="nav-link" href="pipeline.html">Pipeline</a>
-          <a class="nav-link" href="conversations.html">Conversations</a>
-          <a class="nav-link" href="agent-config.html">Agent Config</a>
-          <a class="nav-link" href="product-catalog.html">Product Catalog</a>
-          <a class="nav-link active" href="knowledge-base.html">Knowledge Base</a>
-          <a class="nav-link" href="media-library.html">Media Library</a>
-          <a class="nav-link" href="integrations.html">Integrations</a>
-          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
-            <span>Channels</span>
-            <span class="nav-group-icon" aria-hidden="true"></span>
-          </button>
-          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
-            <a class="nav-link" href="channels/index.html">Channel Overview</a>
-            <a class="nav-link" href="channels/website-chat.html">Website</a>
-            <a class="nav-link" href="channels/whatsapp.html">WhatsApp</a>
-            <a class="nav-link" href="channels/telegram.html">Telegram</a>
-            <a class="nav-link" href="channels/facebook-messenger.html">Facebook</a>
-            <a class="nav-link" href="channels/instagram.html">Instagram</a>
-          </div>
-        </nav>
-      </aside>
-      <main class="main-content">
-        <header class="topbar">
-          <h1>Knowledge Base</h1>
-          <p>The Knowledge Base is where you add business information that helps Iris answer customer questions more accurately. It turns generic AI responses into more useful, company-specific support.</p>
-        </header>
 
-        <section class="content-section">
-          <h2>Knowledge Base overview</h2>
-          <p>The Knowledge Base gives your team a simple way to feed Iris with the information it needs to respond with confidence. By adding trusted content, you help ensure that customer conversations stay relevant, helpful, and aligned with your business.</p>
-          <img src="../screenshots/knowledge-base/01_knowledge_base_overview.PNG" alt="NexCognit Knowledge Base overview" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Base | NexCognit Docs</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
 
-        <section class="content-section">
-          <h2>What the Knowledge Base is used for</h2>
-          <p>The Knowledge Base is used to store information that Iris can reference during conversations. This may include product details, pricing guidance, policies, service descriptions, FAQs, or internal business context that should shape answers.</p>
-        </section>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">NexCognit Docs</div>
+      <nav class="nav-links">
+        <a class="nav-link" href="../index.html">Overview</a>
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="leads.html">Leads</a>
+        <a class="nav-link" href="pipeline.html">Pipeline</a>
+        <a class="nav-link" href="conversations.html">Conversations</a>
+        <a class="nav-link" href="agent-config.html">Agent Config</a>
+        <a class="nav-link" href="product-catalog.html">Product Catalog</a>
+        <a class="nav-link active" href="knowledge-base.html">Knowledge Base</a>
+        <a class="nav-link" href="media-library.html">Media Library</a>
+        <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false"
+          aria-controls="integrations-nav">
+          <span>Integrations</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
 
-        <section class="content-section">
-          <h2>Adding content by uploading files</h2>
-          <p>You can upload files such as PDFs, documents, or other written materials to add information to the Knowledge Base. This is a practical option when you already have structured content that should be reused in conversations.</p>
-        </section>
+        <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+          <a class="nav-link" href="integrations.html">Integration Overview</a>
+          <a class="nav-link" href="integrations/zoho-crm.html">Zoho CRM</a>
+          <a class="nav-link" href="integrations/google-calendar.html">Google Calendar</a>
+        </div>
+        <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false"
+          aria-controls="channels-nav">
+          <span>Channels</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+          <a class="nav-link" href="channels/index.html">Channel Overview</a>
+          <a class="nav-link" href="channels/website-chat.html">Website</a>
+          <a class="nav-link" href="channels/whatsapp.html">WhatsApp</a>
+          <a class="nav-link" href="channels/telegram.html">Telegram</a>
+          <a class="nav-link" href="channels/facebook-messenger.html">Facebook</a>
+          <a class="nav-link" href="channels/instagram.html">Instagram</a>
+        </div>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Knowledge Base</h1>
+        <p>The Knowledge Base is where you add business information that helps Iris answer customer questions more
+          accurately. It turns generic AI responses into more useful, company-specific support.</p>
+      </header>
 
-        <section class="content-section">
-          <h2>Adding content by importing website URLs</h2>
-          <p>If your business information lives on a website, you can import URLs directly into the Knowledge Base. This helps bring in up-to-date content from your site and keeps the knowledge source connected to your public-facing information.</p>
-        </section>
+      <section class="content-section">
+        <h2>Knowledge Base overview</h2>
+        <p>The Knowledge Base gives your team a simple way to feed Iris with the information it needs to respond with
+          confidence. By adding trusted content, you help ensure that customer conversations stay relevant, helpful, and
+          aligned with your business.</p>
+        <img src="../screenshots/knowledge-base/01_knowledge_base_overview.PNG" alt="NexCognit Knowledge Base overview"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Adding content by pasting text manually</h2>
-          <p>For quick updates or one-off information, you can add content by pasting text directly into the Knowledge Base. This is useful for FAQs, product notes, or short guidance that needs to be made available immediately.</p>
-        </section>
+      <section class="content-section">
+        <h2>What the Knowledge Base is used for</h2>
+        <p>The Knowledge Base is used to store information that Iris can reference during conversations. This may
+          include product details, pricing guidance, policies, service descriptions, FAQs, or internal business context
+          that should shape answers.</p>
+      </section>
 
-        <section class="content-section">
-          <h2>How Iris uses Knowledge Base content</h2>
-          <p>When a customer asks a question, Iris can use the content in the Knowledge Base to build a more relevant answer. Instead of relying only on general AI knowledge, Iris can respond using the specific information your business has provided.</p>
-        </section>
+      <section class="content-section">
+        <h2>Adding content by uploading files</h2>
+        <p>You can upload files such as PDFs, documents, or other written materials to add information to the Knowledge
+          Base. This is a practical option when you already have structured content that should be reused in
+          conversations.</p>
+      </section>
 
-        <section class="content-section">
-          <h2>Why accurate business information matters</h2>
-          <p>Keeping your Knowledge Base accurate is essential because Iris’s responses depend on the quality of the information it can access. Outdated or incomplete content can lead to confusion, incorrect answers, or missed opportunities to help the customer effectively.</p>
-        </section>
+      <section class="content-section">
+        <h2>Adding content by importing website URLs</h2>
+        <p>If your business information lives on a website, you can import URLs directly into the Knowledge Base. This
+          helps bring in up-to-date content from your site and keeps the knowledge source connected to your
+          public-facing information.</p>
+      </section>
 
-        <section class="content-section">
-          <h2>Best practices</h2>
-          <ul>
-            <li>Keep content current so Iris can answer with confidence.</li>
-            <li>Use clear, business-specific information rather than generic wording.</li>
-            <li>Upload or update content regularly as products and policies change.</li>
-            <li>Review important topics such as pricing, availability, and support policies often.</li>
-          </ul>
-        </section>
-      </main>
-    </div>
-    <script src="../assets/script.js"></script>
-  </body>
+      <section class="content-section">
+        <h2>Adding content by pasting text manually</h2>
+        <p>For quick updates or one-off information, you can add content by pasting text directly into the Knowledge
+          Base. This is useful for FAQs, product notes, or short guidance that needs to be made available immediately.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>How Iris uses Knowledge Base content</h2>
+        <p>When a customer asks a question, Iris can use the content in the Knowledge Base to build a more relevant
+          answer. Instead of relying only on general AI knowledge, Iris can respond using the specific information your
+          business has provided.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Why accurate business information matters</h2>
+        <p>Keeping your Knowledge Base accurate is essential because Iris’s responses depend on the quality of the
+          information it can access. Outdated or incomplete content can lead to confusion, incorrect answers, or missed
+          opportunities to help the customer effectively.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Best practices</h2>
+        <ul>
+          <li>Keep content current so Iris can answer with confidence.</li>
+          <li>Use clear, business-specific information rather than generic wording.</li>
+          <li>Upload or update content regularly as products and policies change.</li>
+          <li>Review important topics such as pricing, availability, and support policies often.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="../assets/script.js"></script>
+</body>
+
 </html>

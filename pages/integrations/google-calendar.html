@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Calendar | NexCognit Docs</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">NexCognit Docs</div>
+            <nav class="nav-links">
+                <a class="nav-link" href="../../index.html">Overview</a>
+                <a class="nav-link" href="../dashboard.html">Dashboard</a>
+                <a class="nav-link" href="../leads.html">Leads</a>
+                <a class="nav-link" href="../pipeline.html">Pipeline</a>
+                <a class="nav-link" href="../conversations.html">Conversations</a>
+                <a class="nav-link" href="../agent-config.html">Agent Config</a>
+                <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+                <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+                <a class="nav-link" href="../media-library.html">Media Library</a>
+                <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false"
+                    aria-controls="integrations-nav">
+                    <span>Integrations</span>
+                    <span class="nav-group-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+                    <a class="nav-link" href="integrations.html">Integration Overview</a>
+                    <a class="nav-link" href="integrations/zoho-crm.html">Zoho CRM</a>
+                    <a class="nav-link" href="integrations/google-calendar.html">Google Calendar</a>
+                </div>
+                <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false"
+                    aria-controls="channels-nav">
+                    <span>Channels</span>
+                    <span class="nav-group-icon" aria-hidden="true"></span>
+                </button>
+                <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+                    <a class="nav-link" href="../channels/index.html">Channel Overview</a>
+                    <button class="nav-group nav-group-nested" type="button" data-nav-toggle="website"
+                        aria-expanded="false" aria-controls="website-nav">
+                        <span>Website</span>
+                        <span class="nav-group-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="nav-subnav nav-subnav-nested" id="website-nav" data-nav-panel="website">
+                        <a class="nav-link" href="../channels/website-chat.html#introduction">Introduction</a>
+                        <a class="nav-link" href="../channels/website-chat.html#configure-widget">Configure Widget</a>
+                        <a class="nav-link" href="../channels/website-chat.html#widget-appearance">Widget Appearance</a>
+                        <a class="nav-link" href="../channels/website-chat.html#copy-embed-code">Copy Embed Code</a>
+                        <a class="nav-link" href="../channels/website-chat.html#test-widget">Test Widget</a>
+                    </div>
+                    <a class="nav-link" href="../channels/whatsapp.html">WhatsApp</a>
+                    <a class="nav-link" href="../channels/telegram.html">Telegram</a>
+                    <a class="nav-link" href="../channels/facebook-messenger.html">Facebook</a>
+                    <a class="nav-link" href="../channels/instagram.html">Instagram</a>
+                </div>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Google Calendar</h1>
+                <p>The Google Calendar integration lets NexCognit access your calendar to support meeting scheduling and
+                    synchronization. This guide walks through connecting Google Calendar to NexCognit and confirming
+                    that the connection is active.</p>
+            </header>
+
+            <section class="content-section">
+                <h2>Prerequisites</h2>
+                <ul>
+                    <li>Active NexCognit account.</li>
+                    <li>Active Google account with access to Google Calendar.</li>
+                    <li>Permission to authorize third-party integrations.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Step 1 — Open Integrations</h2>
+                <p>Open the Integrations section from the NexCognit dashboard to begin connecting Google Calendar.</p>
+                <img src="../../screenshots/integrations/google-calendar/01_open_integrations.PNG"
+                    alt="Opening the Integrations section in NexCognit"
+                    style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+            </section>
+
+            <section class="content-section">
+                <h2>Step 2 — Connect Google Calendar</h2>
+                <p>Locate Google Calendar in the Integrations list and click Connect to begin the authorization process.
+                </p>
+                <img src="../../screenshots/integrations/google-calendar/02_connect_google_calendar.PNG"
+                    alt="Connecting Google Calendar from the integrations list"
+                    style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+            </section>
+
+            <section class="content-section">
+                <h2>Step 3 — Choose Your Google Account</h2>
+                <p>Select the Google account you want to connect with NexCognit.</p>
+                <img src="../../screenshots/integrations/google-calendar/03_choose_google_account.PNG"
+                    alt="Choosing a Google account to connect"
+                    style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+            </section>
+
+            <section class="content-section">
+                <h2>Step 4 — Grant Permissions</h2>
+                <p>Review the requested permissions, allow the required access, then click Continue.</p>
+                <img src="../../screenshots/integrations/google-calendar/04_grant_google_permissions.PNG"
+                    alt="Granting permissions for the Google Calendar connection"
+                    style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+            </section>
+
+            <section class="content-section">
+                <h2>Step 5 — Connection Successful</h2>
+                <p>After authorization is complete, a confirmation message appears indicating that Google Calendar has
+                    been connected successfully.</p>
+                <img src="../../screenshots/integrations/google-calendar/05_connection_successful.PNG"
+                    alt="Confirming a successful Google Calendar connection"
+                    style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+            </section>
+
+            <section class="content-section">
+                <h2>Step 6 — Verify Connected Status</h2>
+                <p>Return to the Integrations page in NexCognit and verify that Google Calendar now shows a Connected
+                    status.</p>
+                <img src="../../screenshots/integrations/google-calendar/06_google_calendar_connected_status.PNG"
+                    alt="Verifying the connected status of Google Calendar"
+                    style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+            </section>
+
+            <section class="content-section">
+                <h2>How Google Calendar Integration Works</h2>
+                <p>Once connected, NexCognit can access your Google Calendar to support meeting scheduling and calendar
+                    synchronization. This enables AI agents to automatically create and manage meetings based on
+                    configured workflows.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Things to Know</h2>
+                <ul>
+                    <li>Connect the Google account you want NexCognit to use.</li>
+                    <li>If access is revoked from Google, reconnect the integration from NexCognit.</li>
+                    <li>Verify the Connected status before using automatic meeting scheduling.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="../../assets/script.js"></script>
+</body>
+
+</html>

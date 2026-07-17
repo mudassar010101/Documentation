@@ -1,172 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NexCognit Docs</title>
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="brand">NexCognit Docs</div>
-        <nav class="nav-links">
-          <a class="nav-link active" href="index.html">Overview</a>
-          <a class="nav-link" href="pages/dashboard.html">Dashboard</a>
-          <a class="nav-link" href="pages/leads.html">Leads</a>
-          <a class="nav-link" href="pages/pipeline.html">Pipeline</a>
-          <a class="nav-link" href="pages/conversations.html">Conversations</a>
-          <a class="nav-link" href="pages/agent-config.html">Agent Config</a>
-          <a class="nav-link" href="pages/product-catalog.html">Product Catalog</a>
-          <a class="nav-link" href="pages/knowledge-base.html">Knowledge Base</a>
-          <a class="nav-link" href="pages/media-library.html">Media Library</a>
-          <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false" aria-controls="integrations-nav">
-            <span>Integrations</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexCognit Docs</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">NexCognit Docs</div>
+      <nav class="nav-links">
+        <a class="nav-link active" href="index.html">Overview</a>
+        <a class="nav-link" href="pages/dashboard.html">Dashboard</a>
+        <a class="nav-link" href="pages/leads.html">Leads</a>
+        <a class="nav-link" href="pages/pipeline.html">Pipeline</a>
+        <a class="nav-link" href="pages/conversations.html">Conversations</a>
+        <a class="nav-link" href="pages/agent-config.html">Agent Config</a>
+        <a class="nav-link" href="pages/product-catalog.html">Product Catalog</a>
+        <a class="nav-link" href="pages/knowledge-base.html">Knowledge Base</a>
+        <a class="nav-link" href="pages/media-library.html">Media Library</a>
+        <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false"
+          aria-controls="integrations-nav">
+          <span>Integrations</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+          <a class="nav-link" href="pages/integrations.html">Integration Overview</a>
+          <a class="nav-link" href="pages/integrations/zoho-crm.html">Zoho CRM</a>
+          <a class="nav-link" href="pages/integrations/google-calendar.html">Google Calendar</a>
+        </div>
+        <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false"
+          aria-controls="channels-nav">
+          <span>Channels</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+          <a class="nav-link" href="pages/channels/index.html">Channel Overview</a>
+          <a class="nav-link" href="pages/channels/website-chat.html">Website</a>
+          <button class="nav-group nav-group-nested" type="button" data-nav-toggle="whatsapp" aria-expanded="false"
+            aria-controls="whatsapp-nav">
+            <span>WhatsApp</span>
             <span class="nav-group-icon" aria-hidden="true"></span>
           </button>
-          <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
-            <a class="nav-link" href="pages/integrations.html">Integration Overview</a>
-            <a class="nav-link" href="pages/integrations/zoho-crm.html">Zoho CRM</a>
+          <div class="nav-subnav nav-subnav-nested" id="whatsapp-nav" data-nav-panel="whatsapp">
+            <a class="nav-link" href="pages/channels/whatsapp.html#introduction">Introduction</a>
+            <a class="nav-link" href="pages/channels/whatsapp.html#facebook-connection">Facebook Connection</a>
+            <a class="nav-link" href="pages/channels/whatsapp.html#business-selection">Business Selection</a>
+            <a class="nav-link" href="pages/channels/whatsapp.html#phone-verification">Phone Verification</a>
+            <a class="nav-link" href="pages/channels/whatsapp.html#finish-setup">Finish Setup</a>
           </div>
-          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
-            <span>Channels</span>
-            <span class="nav-group-icon" aria-hidden="true"></span>
-          </button>
-          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
-            <a class="nav-link" href="pages/channels/index.html">Channel Overview</a>
-            <a class="nav-link" href="pages/channels/website-chat.html">Website</a>
-            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="whatsapp" aria-expanded="false" aria-controls="whatsapp-nav">
-              <span>WhatsApp</span>
-              <span class="nav-group-icon" aria-hidden="true"></span>
-            </button>
-            <div class="nav-subnav nav-subnav-nested" id="whatsapp-nav" data-nav-panel="whatsapp">
-              <a class="nav-link" href="pages/channels/whatsapp.html#introduction">Introduction</a>
-              <a class="nav-link" href="pages/channels/whatsapp.html#facebook-connection">Facebook Connection</a>
-              <a class="nav-link" href="pages/channels/whatsapp.html#business-selection">Business Selection</a>
-              <a class="nav-link" href="pages/channels/whatsapp.html#phone-verification">Phone Verification</a>
-              <a class="nav-link" href="pages/channels/whatsapp.html#finish-setup">Finish Setup</a>
-            </div>
-            <a class="nav-link" href="pages/channels/telegram.html">Telegram</a>
-            <a class="nav-link" href="pages/channels/facebook-messenger.html">Facebook</a>
-            <a class="nav-link" href="pages/channels/instagram.html">Instagram</a>
-          </div>
-        </nav>
-      </aside>
+          <a class="nav-link" href="pages/channels/telegram.html">Telegram</a>
+          <a class="nav-link" href="pages/channels/facebook-messenger.html">Facebook</a>
+          <a class="nav-link" href="pages/channels/instagram.html">Instagram</a>
+        </div>
+      </nav>
+    </aside>
 
-      <main class="main-content">
-        <header class="topbar">
-          <span class="docs-eyebrow">Documentation</span>
-          <h1>NexCognit Documentation</h1>
-          <p>Everything you need to set up, configure, and run AI sales agents on the NexCognit platform — from dashboard basics to full channel integrations.</p>
-        </header>
+    <main class="main-content">
+      <header class="topbar">
+        <span class="docs-eyebrow">Documentation</span>
+        <h1>NexCognit Documentation</h1>
+        <p>Everything you need to set up, configure, and run AI sales agents on the NexCognit platform — from dashboard
+          basics to full channel integrations.</p>
+      </header>
 
-        <section class="card-grid">
-          <article class="card">
-            <h3>New here?</h3>
-            <p>Start with the platform overview.</p>
-            <a href="pages/overview.html">Read the Overview</a>
-          </article>
-          <article class="card">
-            <h3>Setting up a channel?</h3>
-            <p>Connect WhatsApp, Telegram, Facebook, and more.</p>
-            <a href="pages/channels/index.html">Browse Channels</a>
-          </article>
-          <article class="card">
-            <h3>Configuring your agent?</h3>
-            <p>Set up how your AI agent responds to leads.</p>
-            <a href="pages/agent-config.html">Open Agent Config</a>
-          </article>
-        </section>
+      <section class="card-grid">
+        <article class="card">
+          <h3>New here?</h3>
+          <p>Start with the platform overview.</p>
+          <a href="pages/overview.html">Read the Overview</a>
+        </article>
+        <article class="card">
+          <h3>Setting up a channel?</h3>
+          <p>Connect WhatsApp, Telegram, Facebook, and more.</p>
+          <a href="pages/channels/index.html">Browse Channels</a>
+        </article>
+        <article class="card">
+          <h3>Configuring your agent?</h3>
+          <p>Set up how your AI agent responds to leads.</p>
+          <a href="pages/agent-config.html">Open Agent Config</a>
+        </article>
+      </section>
 
-        <h2>Platform Guides</h2>
-        <section class="card-grid">
-          <article class="card">
-            <h3>Dashboard</h3>
-            <p>KPI cards, lead temperature, and a snapshot of activity across your workspace.</p>
-            <a href="pages/dashboard.html">Open Dashboard</a>
-          </article>
-          <article class="card">
-            <h3>Leads</h3>
-            <p>See how leads are captured, scored, and organized inside NexCognit.</p>
-            <a href="pages/leads.html">Open Leads</a>
-          </article>
-          <article class="card">
-            <h3>Pipeline</h3>
-            <p>Track deal stages and understand how leads move through your pipeline.</p>
-            <a href="pages/pipeline.html">Open Pipeline</a>
-          </article>
-          <article class="card">
-            <h3>Conversations</h3>
-            <p>Review and manage customer conversations across every connected channel.</p>
-            <a href="pages/conversations.html">Open Conversations</a>
-          </article>
-          <article class="card">
-            <h3>Agent Config</h3>
-            <p>Configure how your AI agent behaves, responds, and qualifies leads.</p>
-            <a href="pages/agent-config.html">Open Agent Config</a>
-          </article>
-          <article class="card">
-            <h3>Product Catalog</h3>
-            <p>Manage the products or services your AI agent can present to customers.</p>
-            <a href="pages/product-catalog.html">Open Product Catalog</a>
-          </article>
-          <article class="card">
-            <h3>Knowledge Base</h3>
-            <p>Give your agent the reference material it needs to answer accurately.</p>
-            <a href="pages/knowledge-base.html">Open Knowledge Base</a>
-          </article>
-          <article class="card">
-            <h3>Media Library</h3>
-            <p>Store and reuse images, files, and media assets used in conversations.</p>
-            <a href="pages/media-library.html">Open Media Library</a>
-          </article>
-          <article class="card">
-            <h3>Integrations</h3>
-            <p>See which systems and services can be connected to extend the workflow.</p>
-            <a href="pages/integrations.html">Open Integrations</a>
-          </article>
-        </section>
+      <h2>Platform Guides</h2>
+      <section class="card-grid">
+        <article class="card">
+          <h3>Dashboard</h3>
+          <p>KPI cards, lead temperature, and a snapshot of activity across your workspace.</p>
+          <a href="pages/dashboard.html">Open Dashboard</a>
+        </article>
+        <article class="card">
+          <h3>Leads</h3>
+          <p>See how leads are captured, scored, and organized inside NexCognit.</p>
+          <a href="pages/leads.html">Open Leads</a>
+        </article>
+        <article class="card">
+          <h3>Pipeline</h3>
+          <p>Track deal stages and understand how leads move through your pipeline.</p>
+          <a href="pages/pipeline.html">Open Pipeline</a>
+        </article>
+        <article class="card">
+          <h3>Conversations</h3>
+          <p>Review and manage customer conversations across every connected channel.</p>
+          <a href="pages/conversations.html">Open Conversations</a>
+        </article>
+        <article class="card">
+          <h3>Agent Config</h3>
+          <p>Configure how your AI agent behaves, responds, and qualifies leads.</p>
+          <a href="pages/agent-config.html">Open Agent Config</a>
+        </article>
+        <article class="card">
+          <h3>Product Catalog</h3>
+          <p>Manage the products or services your AI agent can present to customers.</p>
+          <a href="pages/product-catalog.html">Open Product Catalog</a>
+        </article>
+        <article class="card">
+          <h3>Knowledge Base</h3>
+          <p>Give your agent the reference material it needs to answer accurately.</p>
+          <a href="pages/knowledge-base.html">Open Knowledge Base</a>
+        </article>
+        <article class="card">
+          <h3>Media Library</h3>
+          <p>Store and reuse images, files, and media assets used in conversations.</p>
+          <a href="pages/media-library.html">Open Media Library</a>
+        </article>
+        <article class="card">
+          <h3>Integrations</h3>
+          <p>See which systems and services can be connected to extend the workflow.</p>
+          <a href="pages/integrations.html">Open Integrations</a>
+        </article>
+      </section>
 
-        <h2>Integrations</h2>
-        <section class="card-grid">
-          <article class="card">
-            <h3>Zoho CRM</h3>
-            <p>Send captured leads directly into your Zoho CRM account.</p>
-            <a href="pages/integrations/zoho-crm.html">Set up Zoho CRM</a>
-          </article>
-        </section>
 
-        <h2>Channel Integrations</h2>
-        <section class="card-grid">
-          <article class="card">
-            <h3>Website</h3>
-            <p>Add the AI chat widget to your website in a few steps.</p>
-            <a href="pages/channels/website-chat.html">Set up Website</a>
-          </article>
-          <article class="card">
-            <h3>WhatsApp</h3>
-            <p>Connect a WhatsApp Business account through Meta and Gupshup.</p>
-            <a href="pages/channels/whatsapp.html">Set up WhatsApp</a>
-          </article>
-          <article class="card">
-            <h3>Telegram</h3>
-            <p>Create a bot with BotFather and connect it to NexCognit.</p>
-            <a href="pages/channels/telegram.html">Set up Telegram</a>
-          </article>
-          <article class="card">
-            <h3>Facebook</h3>
-            <p>Connect a Facebook Page through the Meta Developer console.</p>
-            <a href="pages/channels/facebook-messenger.html">Set up Facebook</a>
-          </article>
-          <article class="card">
-            <h3>Instagram</h3>
-            <p>Link your Instagram Business account for direct message support.</p>
-            <a href="pages/channels/instagram.html">Set up Instagram</a>
-          </article>
-        </section>
-      </main>
-    </div>
+      <h2>Integrations</h2>
 
-    <script src="assets/script.js"></script>
-  </body>
+      <section class="card-grid">
+        <article class="card">
+          <h3>Zoho CRM</h3>
+          <p>Send captured leads directly into your Zoho CRM account.</p>
+          <a href="pages/integrations/zoho-crm.html">Set up Zoho CRM</a>
+        </article>
+
+        <article class="card">
+          <h3>Google Calendar</h3>
+          <p>Connect Google Calendar to automatically schedule meetings and demos from NexCognit.</p>
+          <a href="pages/integrations/google-calendar.html">Set up Google Calendar</a>
+        </article>
+      </section>
+
+      <h2>Channel Integrations</h2>
+      <section class="card-grid">
+        <article class="card">
+          <h3>Website</h3>
+          <p>Add the AI chat widget to your website in a few steps.</p>
+          <a href="pages/channels/website-chat.html">Set up Website</a>
+        </article>
+        <article class="card">
+          <h3>WhatsApp</h3>
+          <p>Connect a WhatsApp Business account through Meta and Gupshup.</p>
+          <a href="pages/channels/whatsapp.html">Set up WhatsApp</a>
+        </article>
+        <article class="card">
+          <h3>Telegram</h3>
+          <p>Create a bot with BotFather and connect it to NexCognit.</p>
+          <a href="pages/channels/telegram.html">Set up Telegram</a>
+        </article>
+        <article class="card">
+          <h3>Facebook</h3>
+          <p>Connect a Facebook Page through the Meta Developer console.</p>
+          <a href="pages/channels/facebook-messenger.html">Set up Facebook</a>
+        </article>
+        <article class="card">
+          <h3>Instagram</h3>
+          <p>Link your Instagram Business account for direct message support.</p>
+          <a href="pages/channels/instagram.html">Set up Instagram</a>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+
 </html>
