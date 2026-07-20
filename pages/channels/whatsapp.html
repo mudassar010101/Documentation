@@ -1,242 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WhatsApp | NexCognit Docs</title>
-    <link rel="stylesheet" href="../../assets/style.css" />
-  </head>
-  <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="brand">NexCognit Docs</div>
-        <nav class="nav-links">
-          <a class="nav-link" href="../../index.html">Overview</a>
-          <a class="nav-link" href="../dashboard.html">Dashboard</a>
-          <a class="nav-link" href="../leads.html">Leads</a>
-          <a class="nav-link" href="../pipeline.html">Pipeline</a>
-          <a class="nav-link" href="../conversations.html">Conversations</a>
-          <a class="nav-link" href="../agent-config.html">Agent Config</a>
-          <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
-          <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
-          <a class="nav-link" href="../media-library.html">Media Library</a>
-          <a class="nav-link" href="../integrations.html">Integrations</a>
-          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
-            <span>Channels</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp | NexCognit Docs</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">NexCognit Docs</div>
+      <nav class="nav-links">
+        <a class="nav-link" href="../../index.html">Overview</a>
+        <a class="nav-link" href="../dashboard.html">Dashboard</a>
+        <a class="nav-link" href="../leads.html">Leads</a>
+        <a class="nav-link" href="../pipeline.html">Pipeline</a>
+        <a class="nav-link" href="../conversations.html">Conversations</a>
+        <a class="nav-link" href="../agent-config.html">Agent Config</a>
+        <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+        <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+        <a class="nav-link" href="../media-library.html">Media Library</a>
+        <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false"
+          aria-controls="integrations-nav">
+          <span>Integrations</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+          <a class="nav-link" href="../integrations.html">Integration Overview</a>
+          <a class="nav-link" href="../integrations/zoho-crm.html">Zoho CRM</a>
+          <a class="nav-link" href="../integrations/google-calendar.html">Google Calendar</a>
+        </div>
+        <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false"
+          aria-controls="channels-nav">
+          <span>Channels</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+          <a class="nav-link" href="index.html">Channel Overview</a>
+          <a class="nav-link" href="website-chat.html">Website</a>
+          <button class="nav-group nav-group-nested" type="button" data-nav-toggle="whatsapp" aria-expanded="false"
+            aria-controls="whatsapp-nav">
+            <span>WhatsApp</span>
             <span class="nav-group-icon" aria-hidden="true"></span>
           </button>
-          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
-            <a class="nav-link" href="index.html">Channel Overview</a>
-            <a class="nav-link" href="website-chat.html">Website</a>
-            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="whatsapp" aria-expanded="false" aria-controls="whatsapp-nav">
-              <span>WhatsApp</span>
-              <span class="nav-group-icon" aria-hidden="true"></span>
-            </button>
-            <div class="nav-subnav nav-subnav-nested" id="whatsapp-nav" data-nav-panel="whatsapp">
-              <a class="nav-link" href="whatsapp.html#introduction">Introduction</a>
-              <a class="nav-link" href="whatsapp.html#facebook-connection">Facebook Connection</a>
-              <a class="nav-link" href="whatsapp.html#business-selection">Business Selection</a>
-              <a class="nav-link" href="whatsapp.html#phone-verification">Phone Verification</a>
-              <a class="nav-link" href="whatsapp.html#finish-setup">Finish Setup</a>
-            </div>
-            <a class="nav-link" href="telegram.html">Telegram</a>
-            <a class="nav-link" href="facebook-messenger.html">Facebook</a>
-            <a class="nav-link" href="instagram.html">Instagram</a>
+          <div class="nav-subnav nav-subnav-nested" id="whatsapp-nav" data-nav-panel="whatsapp">
+            <a class="nav-link" href="whatsapp.html#introduction">Introduction</a>
+            <a class="nav-link" href="whatsapp.html#facebook-connection">Facebook Connection</a>
+            <a class="nav-link" href="whatsapp.html#business-selection">Business Selection</a>
+            <a class="nav-link" href="whatsapp.html#phone-verification">Phone Verification</a>
+            <a class="nav-link" href="whatsapp.html#finish-setup">Finish Setup</a>
           </div>
-        </nav>
-      </aside>
-      <main class="main-content">
-        <header class="topbar">
-          <h1>WhatsApp</h1>
-          <p>WhatsApp lets your business receive and respond to customer conversations through Meta’s messaging platform. This guide walks through the setup process from the initial connection to the final activation inside NexCognit.</p>
-        </header>
+          <a class="nav-link" href="telegram.html">Telegram</a>
+          <a class="nav-link" href="facebook-messenger.html">Facebook</a>
+          <a class="nav-link" href="instagram.html">Instagram</a>
+        </div>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <h1>WhatsApp</h1>
+        <p>WhatsApp lets your business receive and respond to customer conversations through Meta’s messaging platform.
+          This guide walks through the setup process from the initial connection to the final activation inside
+          NexCognit.</p>
+      </header>
 
-        <section class="content-section">
-          <h2>Prerequisites</h2>
-          <ul>
-            <li>You already have access to a NexCognit workspace.</li>
-            <li>You have a Facebook account and access to the relevant Meta business account.</li>
-            <li>You are ready to connect a WhatsApp Business account and test it after setup.</li>
-          </ul>
-        </section>
+      <section class="content-section">
+        <h2>Prerequisites</h2>
+        <ul>
+          <li>You already have access to a NexCognit workspace.</li>
+          <li>You have a Facebook account and access to the relevant Meta business account.</li>
+          <li>You are ready to connect a WhatsApp Business account and test it after setup.</li>
+        </ul>
+      </section>
 
-        <section class="content-section" id="introduction">
-          <h2>Step 1 — Open the WhatsApp setup entry</h2>
-          <p>Open the WhatsApp channel section in NexCognit to begin the connection flow. This is the starting point for linking your business account to the platform.</p>
-          <img src="../../screenshots/channels/whatsapp/01_introduction.PNG" alt="Opening the WhatsApp setup entry in NexCognit" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="introduction">
+        <h2>Step 1 — Open the WhatsApp setup entry</h2>
+        <p>Open the WhatsApp channel section in NexCognit to begin the connection flow. This is the starting point for
+          linking your business account to the platform.</p>
+        <img src="../../screenshots/channels/whatsapp/01_introduction.PNG"
+          alt="Opening the WhatsApp setup entry in NexCognit"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="facebook-connection">
-          <h2>Step 2 — Connect with Facebook</h2>
-          <p>Choose the option to connect the channel using Facebook. This begins the Meta-based setup needed for WhatsApp Business integration.</p>
-          <img src="../../screenshots/channels/whatsapp/02_connect_with_facebook.PNG" alt="Connecting the WhatsApp channel with Facebook" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="facebook-connection">
+        <h2>Step 2 — Connect with Facebook</h2>
+        <p>Choose the option to connect the channel using Facebook. This begins the Meta-based setup needed for WhatsApp
+          Business integration.</p>
+        <img src="../../screenshots/channels/whatsapp/02_connect_with_facebook.PNG"
+          alt="Connecting the WhatsApp channel with Facebook"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 3 — Open Facebook login</h2>
-          <p>Continue through the login flow and open the Facebook sign-in step for the business account you want to use.</p>
-          <img src="../../screenshots/channels/whatsapp/03_open_facebook_login.PNG" alt="Opening the Facebook login flow" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 3 — Open Facebook login</h2>
+        <p>Continue through the login flow and open the Facebook sign-in step for the business account you want to use.
+        </p>
+        <img src="../../screenshots/channels/whatsapp/03_open_facebook_login.PNG" alt="Opening the Facebook login flow"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 4 — Continue the Facebook login process</h2>
-          <p>Follow the Facebook login prompts until the connection flow is ready to continue.</p>
-          <img src="../../screenshots/channels/whatsapp/04_continue_facebook_login.PNG" alt="Continuing the Facebook login process" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 4 — Continue the Facebook login process</h2>
+        <p>Follow the Facebook login prompts until the connection flow is ready to continue.</p>
+        <img src="../../screenshots/channels/whatsapp/04_continue_facebook_login.PNG"
+          alt="Continuing the Facebook login process"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 5 — Select the business page</h2>
-          <p>Select the Facebook Page that will be associated with your WhatsApp Business setup.</p>
-          <img src="../../screenshots/channels/whatsapp/05_select_business_page.PNG" alt="Selecting the business page for the connection" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 5 — Select the business page</h2>
+        <p>Select the Facebook Page that will be associated with your WhatsApp Business setup.</p>
+        <img src="../../screenshots/channels/whatsapp/05_select_business_page.PNG"
+          alt="Selecting the business page for the connection"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="business-selection">
-          <h2>Step 6 — Select the business ID</h2>
-          <p>Choose the business account or business ID that should own the WhatsApp connection.</p>
-          <img src="../../screenshots/channels/whatsapp/06_select_business_id.jpeg" alt="Selecting the business ID" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="business-selection">
+        <h2>Step 6 — Select the business ID</h2>
+        <p>Choose the business account or business ID that should own the WhatsApp connection.</p>
+        <img src="../../screenshots/channels/whatsapp/06_select_business_id.jpeg" alt="Selecting the business ID"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 7 — Choose the WhatsApp Business account</h2>
-          <p>Select the WhatsApp Business account that will be used for customer conversations.</p>
-          <img src="../../screenshots/channels/whatsapp/07_select_whatsapp_business_account.jpeg" alt="Choosing the WhatsApp Business account" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 7 — Choose the WhatsApp Business account</h2>
+        <p>Select the WhatsApp Business account that will be used for customer conversations.</p>
+        <img src="../../screenshots/channels/whatsapp/07_select_whatsapp_business_account.jpeg"
+          alt="Choosing the WhatsApp Business account"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 8 — Create a WhatsApp Business account if needed</h2>
-          <p>If a Business account is not already available, create one before continuing with the setup.</p>
-          <img src="../../screenshots/channels/whatsapp/08_create_whatsapp_business_account.jpeg" alt="Creating a WhatsApp Business account" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 8 — Create a WhatsApp Business account if needed</h2>
+        <p>If a Business account is not already available, create one before continuing with the setup.</p>
+        <img src="../../screenshots/channels/whatsapp/08_create_whatsapp_business_account.jpeg"
+          alt="Creating a WhatsApp Business account"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 9 — Continue account creation</h2>
-          <p>Continue through the prompts to finish creating the WhatsApp Business account.</p>
-          <img src="../../screenshots/channels/whatsapp/09_continue_account_creation.jpeg" alt="Continuing the WhatsApp Business account creation flow" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 9 — Continue account creation</h2>
+        <p>Continue through the prompts to finish creating the WhatsApp Business account.</p>
+        <img src="../../screenshots/channels/whatsapp/09_continue_account_creation.jpeg"
+          alt="Continuing the WhatsApp Business account creation flow"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 10 — Choose a business category</h2>
-          <p>Select the category that best describes your business so the account can be configured correctly.</p>
-          <img src="../../screenshots/channels/whatsapp/10_choose_business_category.jpeg" alt="Choosing a business category for the WhatsApp Business account" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 10 — Choose a business category</h2>
+        <p>Select the category that best describes your business so the account can be configured correctly.</p>
+        <img src="../../screenshots/channels/whatsapp/10_choose_business_category.jpeg"
+          alt="Choosing a business category for the WhatsApp Business account"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 11 — Select the industry category</h2>
-          <p>Choose the industry category that matches the nature of your business.</p>
-          <img src="../../screenshots/channels/whatsapp/11_select_industry_category.PNG" alt="Selecting the industry category" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 11 — Select the industry category</h2>
+        <p>Choose the industry category that matches the nature of your business.</p>
+        <img src="../../screenshots/channels/whatsapp/11_select_industry_category.PNG"
+          alt="Selecting the industry category"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 12 — Select the other category option</h2>
-          <p>If your business does not fit a common category, choose the appropriate alternative option.</p>
-          <img src="../../screenshots/channels/whatsapp/12_select_other_category.jpeg" alt="Selecting the other category option" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 12 — Select the other category option</h2>
+        <p>If your business does not fit a common category, choose the appropriate alternative option.</p>
+        <img src="../../screenshots/channels/whatsapp/12_select_other_category.jpeg"
+          alt="Selecting the other category option"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 13 — Continue after category selection</h2>
-          <p>Proceed to the next step after confirming the business category details.</p>
-          <img src="../../screenshots/channels/whatsapp/13_continue_after_category.jpeg" alt="Continuing after selecting the business category" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 13 — Continue after category selection</h2>
+        <p>Proceed to the next step after confirming the business category details.</p>
+        <img src="../../screenshots/channels/whatsapp/13_continue_after_category.jpeg"
+          alt="Continuing after selecting the business category"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="phone-verification">
-          <h2>Step 14 — Add a new phone number</h2>
-          <p>Choose to add a phone number that will be used for the WhatsApp Business account.</p>
-          <img src="../../screenshots/channels/whatsapp/14_add_new_phone_number.PNG" alt="Adding a new phone number for WhatsApp" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="phone-verification">
+        <h2>Step 14 — Add a new phone number</h2>
+        <p>Choose to add a phone number that will be used for the WhatsApp Business account.</p>
+        <img src="../../screenshots/channels/whatsapp/14_add_new_phone_number.PNG"
+          alt="Adding a new phone number for WhatsApp"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 15 — Enter the phone number</h2>
-          <p>Enter the phone number that should be associated with the WhatsApp Business account.</p>
-          <img src="../../screenshots/channels/whatsapp/15_enter_phone_number.jpeg" alt="Entering the phone number" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 15 — Enter the phone number</h2>
+        <p>Enter the phone number that should be associated with the WhatsApp Business account.</p>
+        <img src="../../screenshots/channels/whatsapp/15_enter_phone_number.jpeg" alt="Entering the phone number"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 16 — Select the country code</h2>
-          <p>Choose the correct country code before continuing with number verification.</p>
-          <img src="../../screenshots/channels/whatsapp/16_select_country_code.PNG" alt="Selecting the country code" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 16 — Select the country code</h2>
+        <p>Choose the correct country code before continuing with number verification.</p>
+        <img src="../../screenshots/channels/whatsapp/16_select_country_code.PNG" alt="Selecting the country code"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 17 — Open the phone number field</h2>
-          <p>Open the field where the phone number is entered so the setup can continue.</p>
-          <img src="../../screenshots/channels/whatsapp/17_open_phone_number_field.jpeg" alt="Opening the phone number field" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 17 — Open the phone number field</h2>
+        <p>Open the field where the phone number is entered so the setup can continue.</p>
+        <img src="../../screenshots/channels/whatsapp/17_open_phone_number_field.jpeg"
+          alt="Opening the phone number field"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 18 — Enter the phone number again</h2>
-          <p>Complete the phone number entry and confirm that it is the intended business number.</p>
-          <img src="../../screenshots/channels/whatsapp/18_enter_phone_number_again.jpeg" alt="Entering the phone number again" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 18 — Enter the phone number again</h2>
+        <p>Complete the phone number entry and confirm that it is the intended business number.</p>
+        <img src="../../screenshots/channels/whatsapp/18_enter_phone_number_again.jpeg"
+          alt="Entering the phone number again"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 19 — Continue after phone number entry</h2>
-          <p>Proceed once the phone number has been provided and verified as the correct value.</p>
-          <img src="../../screenshots/channels/whatsapp/19_continue_after_phone_number.jpeg" alt="Continuing after the phone number is entered" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 19 — Continue after phone number entry</h2>
+        <p>Proceed once the phone number has been provided and verified as the correct value.</p>
+        <img src="../../screenshots/channels/whatsapp/19_continue_after_phone_number.jpeg"
+          alt="Continuing after the phone number is entered"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 20 — Open the verification code field</h2>
-          <p>When prompted, open the verification code field so the number can be confirmed.</p>
-          <img src="../../screenshots/channels/whatsapp/20_open_verification_code_field.PNG" alt="Opening the verification code field" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 20 — Open the verification code field</h2>
+        <p>When prompted, open the verification code field so the number can be confirmed.</p>
+        <img src="../../screenshots/channels/whatsapp/20_open_verification_code_field.PNG"
+          alt="Opening the verification code field"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 21 — Enter the verification code</h2>
-          <p>Enter the code sent to the phone number to verify the WhatsApp Business account.</p>
-          <img src="../../screenshots/channels/whatsapp/21_enter_verification_code.PNG" alt="Entering the verification code" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 21 — Enter the verification code</h2>
+        <p>Enter the code sent to the phone number to verify the WhatsApp Business account.</p>
+        <img src="../../screenshots/channels/whatsapp/21_enter_verification_code.PNG"
+          alt="Entering the verification code"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 22 — Continue after verification</h2>
-          <p>Continue the setup flow after the verification code has been accepted.</p>
-          <img src="../../screenshots/channels/whatsapp/22_continue_after_verification.PNG" alt="Continuing after verification" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 22 — Continue after verification</h2>
+        <p>Continue the setup flow after the verification code has been accepted.</p>
+        <img src="../../screenshots/channels/whatsapp/22_continue_after_verification.PNG"
+          alt="Continuing after verification"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="finish-setup">
-          <h2>Step 23 — Confirm the account connection</h2>
-          <p>Confirm that the account is connected and ready to be used for business messaging.</p>
-          <img src="../../screenshots/channels/whatsapp/23_confirm_account_connection.jpeg" alt="Confirming the WhatsApp account connection" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="finish-setup">
+        <h2>Step 23 — Confirm the account connection</h2>
+        <p>Confirm that the account is connected and ready to be used for business messaging.</p>
+        <img src="../../screenshots/channels/whatsapp/23_confirm_account_connection.jpeg"
+          alt="Confirming the WhatsApp account connection"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 24 — Finish setup</h2>
-          <p>Complete the remaining setup steps so the WhatsApp Business account is fully available.</p>
-          <img src="../../screenshots/channels/whatsapp/24_finish_setup.jpeg" alt="Finishing the WhatsApp setup" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 24 — Finish setup</h2>
+        <p>Complete the remaining setup steps so the WhatsApp Business account is fully available.</p>
+        <img src="../../screenshots/channels/whatsapp/24_finish_setup.jpeg" alt="Finishing the WhatsApp setup"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 25 — Enable the WhatsApp channel in NexCognit</h2>
-          <p>Once the account is ready, enable the WhatsApp channel in NexCognit so it can receive incoming messages.</p>
-          <img src="../../screenshots/channels/whatsapp/25_enable_whatsapp_channel.PNG" alt="Enabling the WhatsApp channel in NexCognit" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 25 — Enable the WhatsApp channel in NexCognit</h2>
+        <p>Once the account is ready, enable the WhatsApp channel in NexCognit so it can receive incoming messages.</p>
+        <img src="../../screenshots/channels/whatsapp/25_enable_whatsapp_channel.PNG"
+          alt="Enabling the WhatsApp channel in NexCognit"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 26 — Continue configuration</h2>
-          <p>Continue through the configuration screen so the connection is finalized inside NexCognit.</p>
-          <img src="../../screenshots/channels/whatsapp/26_continue_configuration.PNG" alt="Continuing the WhatsApp channel configuration" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 26 — Continue configuration</h2>
+        <p>Continue through the configuration screen so the connection is finalized inside NexCognit.</p>
+        <img src="../../screenshots/channels/whatsapp/26_continue_configuration.PNG"
+          alt="Continuing the WhatsApp channel configuration"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 27 — Return to NexCognit dashboard</h2>
-          <p>Return to the NexCognit dashboard once the setup is complete. The WhatsApp channel is then ready to use for customer conversations.</p>
-          <img src="../../screenshots/channels/whatsapp/27_return_to_nexcognit_dashboard.PNG" alt="Returning to the NexCognit dashboard after setup" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 27 — Return to NexCognit dashboard</h2>
+        <p>Return to the NexCognit dashboard once the setup is complete. The WhatsApp channel is then ready to use for
+          customer conversations.</p>
+        <img src="../../screenshots/channels/whatsapp/27_return_to_nexcognit_dashboard.PNG"
+          alt="Returning to the NexCognit dashboard after setup"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>How WhatsApp works after setup</h2>
-          <p>Once the WhatsApp channel is connected, customers can message your business directly through WhatsApp and NexCognit can receive and manage those conversations in one workspace. This makes it easier to keep customer communication organized and responsive.</p>
-        </section>
+      <section class="content-section">
+        <h2>How WhatsApp works after setup</h2>
+        <p>Once the WhatsApp channel is connected, customers can message your business directly through WhatsApp and
+          NexCognit can receive and manage those conversations in one workspace. This makes it easier to keep customer
+          communication organized and responsive.</p>
+      </section>
 
-        <section class="content-section">
-          <h2>Things to know</h2>
-          <ul>
-            <li>Use a business phone number that can receive verification codes.</li>
-            <li>Keep your Meta and WhatsApp Business account permissions up to date.</li>
-            <li>After setup, test the channel with a sample message to confirm that the connection works as expected.</li>
-          </ul>
-        </section>
-      </main>
-    </div>
-    <script src="../../assets/script.js"></script>
-  </body>
+      <section class="content-section">
+        <h2>Things to know</h2>
+        <ul>
+          <li>Use a business phone number that can receive verification codes.</li>
+          <li>Keep your Meta and WhatsApp Business account permissions up to date.</li>
+          <li>After setup, test the channel with a sample message to confirm that the connection works as expected.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="../../assets/script.js"></script>
+</body>
+
 </html>

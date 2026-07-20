@@ -1,152 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram | NexCognit Docs</title>
-    <link rel="stylesheet" href="../../assets/style.css" />
-  </head>
-  <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="brand">NexCognit Docs</div>
-        <nav class="nav-links">
-          <a class="nav-link" href="../../index.html">Overview</a>
-          <a class="nav-link" href="../dashboard.html">Dashboard</a>
-          <a class="nav-link" href="../leads.html">Leads</a>
-          <a class="nav-link" href="../pipeline.html">Pipeline</a>
-          <a class="nav-link" href="../conversations.html">Conversations</a>
-          <a class="nav-link" href="../agent-config.html">Agent Config</a>
-          <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
-          <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
-          <a class="nav-link" href="../media-library.html">Media Library</a>
-          <a class="nav-link" href="../integrations.html">Integrations</a>
-          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
-            <span>Channels</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram | NexCognit Docs</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">NexCognit Docs</div>
+      <nav class="nav-links">
+        <a class="nav-link" href="../../index.html">Overview</a>
+        <a class="nav-link" href="../dashboard.html">Dashboard</a>
+        <a class="nav-link" href="../leads.html">Leads</a>
+        <a class="nav-link" href="../pipeline.html">Pipeline</a>
+        <a class="nav-link" href="../conversations.html">Conversations</a>
+        <a class="nav-link" href="../agent-config.html">Agent Config</a>
+        <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+        <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+        <a class="nav-link" href="../media-library.html">Media Library</a>
+        <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false"
+          aria-controls="integrations-nav">
+          <span>Integrations</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+          <a class="nav-link" href="../integrations.html">Integration Overview</a>
+          <a class="nav-link" href="../integrations/zoho-crm.html">Zoho CRM</a>
+          <a class="nav-link" href="../integrations/google-calendar.html">Google Calendar</a>
+        </div>
+        <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false"
+          aria-controls="channels-nav">
+          <span>Channels</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+          <a class="nav-link" href="index.html">Channel Overview</a>
+          <a class="nav-link" href="website-chat.html">Website</a>
+          <a class="nav-link" href="whatsapp.html">WhatsApp</a>
+          <a class="nav-link" href="telegram.html">Telegram</a>
+          <a class="nav-link" href="facebook-messenger.html">Facebook</a>
+          <button class="nav-group nav-group-nested" type="button" data-nav-toggle="instagram" aria-expanded="false"
+            aria-controls="instagram-nav">
+            <span>Instagram</span>
             <span class="nav-group-icon" aria-hidden="true"></span>
           </button>
-          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
-            <a class="nav-link" href="index.html">Channel Overview</a>
-            <a class="nav-link" href="website-chat.html">Website</a>
-            <a class="nav-link" href="whatsapp.html">WhatsApp</a>
-            <a class="nav-link" href="telegram.html">Telegram</a>
-            <a class="nav-link" href="facebook-messenger.html">Facebook</a>
-            <button class="nav-group nav-group-nested" type="button" data-nav-toggle="instagram" aria-expanded="false" aria-controls="instagram-nav">
-              <span>Instagram</span>
-              <span class="nav-group-icon" aria-hidden="true"></span>
-            </button>
-            <div class="nav-subnav nav-subnav-nested" id="instagram-nav" data-nav-panel="instagram">
-              <a class="nav-link" href="instagram.html#meta-developers">Open Meta for Developers</a>
-              <a class="nav-link" href="instagram.html#select-meta-app">Select Meta App</a>
-              <a class="nav-link" href="instagram.html#customize-instagram">Customize Instagram</a>
-              <a class="nav-link" href="instagram.html#webhook-url">Add Webhook URL</a>
-              <a class="nav-link" href="instagram.html#business-account-id">Copy Business Account ID</a>
-              <a class="nav-link" href="instagram.html#connect-nexcognit">Connect to NexCognit</a>
-            </div>
+          <div class="nav-subnav nav-subnav-nested" id="instagram-nav" data-nav-panel="instagram">
+            <a class="nav-link" href="instagram.html#meta-developers">Open Meta for Developers</a>
+            <a class="nav-link" href="instagram.html#select-meta-app">Select Meta App</a>
+            <a class="nav-link" href="instagram.html#customize-instagram">Customize Instagram</a>
+            <a class="nav-link" href="instagram.html#webhook-url">Add Webhook URL</a>
+            <a class="nav-link" href="instagram.html#business-account-id">Copy Business Account ID</a>
+            <a class="nav-link" href="instagram.html#connect-nexcognit">Connect to NexCognit</a>
           </div>
-        </nav>
-      </aside>
-      <main class="main-content">
-        <header class="topbar">
-          <h1>Instagram</h1>
-          <p>Instagram lets you connect your business account to NexCognit so customers can reach you through Instagram direct messages. This guide walks through the setup flow from Meta for Developers to the final connection in NexCognit.</p>
-        </header>
+        </div>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Instagram</h1>
+        <p>Instagram lets you connect your business account to NexCognit so customers can reach you through Instagram
+          direct messages. This guide walks through the setup flow from Meta for Developers to the final connection in
+          NexCognit.</p>
+      </header>
 
-        <section class="content-section">
-          <h2>Important</h2>
-          <p><strong>Important:</strong> Before connecting Instagram, you must first complete the Facebook/Messenger integration. Instagram uses the Meta app and Facebook configuration created during the Facebook setup. If Facebook is not connected, the Instagram connection will not work.</p>
-        </section>
+      <section class="content-section">
+        <h2>Important</h2>
+        <p><strong>Important:</strong> Before connecting Instagram, you must first complete the Facebook/Messenger
+          integration. Instagram uses the Meta app and Facebook configuration created during the Facebook setup. If
+          Facebook is not connected, the Instagram connection will not work.</p>
+      </section>
 
-        <section class="content-section">
-          <h2>Prerequisites</h2>
-          <ul>
-            <li>You have access to Meta for Developers.</li>
-            <li>You already have a Meta app for the Facebook Messenger setup flow.</li>
-            <li>You have access to the Facebook Page and linked Instagram Business Account that will be used with NexCognit.</li>
-          </ul>
-        </section>
+      <section class="content-section">
+        <h2>Prerequisites</h2>
+        <ul>
+          <li>You have access to Meta for Developers.</li>
+          <li>You already have a Meta app for the Facebook Messenger setup flow.</li>
+          <li>You have access to the Facebook Page and linked Instagram Business Account that will be used with
+            NexCognit.</li>
+        </ul>
+      </section>
 
-        <section class="content-section" id="meta-developers">
-          <h2>Step 1 — Open Meta for Developers</h2>
-          <p>Open developers.facebook.com to continue the Instagram channel setup.</p>
-          <img src="../../screenshots/channels/instagram/01_open_meta_for_developers.PNG" alt="Opening Meta for Developers" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="meta-developers">
+        <h2>Step 1 — Open Meta for Developers</h2>
+        <p>Open developers.facebook.com to continue the Instagram channel setup.</p>
+        <img src="../../screenshots/channels/instagram/01_open_meta_for_developers.PNG"
+          alt="Opening Meta for Developers"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 2 — Open My Apps</h2>
-          <p>Open the My Apps section from the top-right area of the Meta for Developers page.</p>
-          <img src="../../screenshots/channels/instagram/02_click_my_apps.PNG" alt="Opening My Apps in Meta for Developers" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 2 — Open My Apps</h2>
+        <p>Open the My Apps section from the top-right area of the Meta for Developers page.</p>
+        <img src="../../screenshots/channels/instagram/02_click_my_apps.PNG"
+          alt="Opening My Apps in Meta for Developers"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="select-meta-app">
-          <h2>Step 3 — Select the existing Meta app</h2>
-          <p>Select the Meta app that was already created for the Facebook Messenger connection, since the Instagram setup continues from the same app.</p>
-          <img src="../../screenshots/channels/instagram/03_select_existing_meta_app.PNG" alt="Selecting the existing Meta app" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="select-meta-app">
+        <h2>Step 3 — Select the existing Meta app</h2>
+        <p>Select the Meta app that was already created for the Facebook Messenger connection, since the Instagram setup
+          continues from the same app.</p>
+        <img src="../../screenshots/channels/instagram/03_select_existing_meta_app.PNG"
+          alt="Selecting the existing Meta app"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 4 — Open Use Cases from the sidebar</h2>
-          <p>Open the Use Cases section inside the selected Meta app.</p>
-          <img src="../../screenshots/channels/instagram/04_open_usecases_from_sidebar.PNG" alt="Opening Use Cases from the Meta app sidebar" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 4 — Open Use Cases from the sidebar</h2>
+        <p>Open the Use Cases section inside the selected Meta app.</p>
+        <img src="../../screenshots/channels/instagram/04_open_usecases_from_sidebar.PNG"
+          alt="Opening Use Cases from the Meta app sidebar"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="customize-instagram">
-          <h2>Step 5 — Customize Instagram</h2>
-          <p>Open or customize the Instagram use case inside the Meta app.</p>
-          <img src="../../screenshots/channels/instagram/05_customize_instagram.PNG" alt="Customizing the Instagram use case" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="customize-instagram">
+        <h2>Step 5 — Customize Instagram</h2>
+        <p>Open or customize the Instagram use case inside the Meta app.</p>
+        <img src="../../screenshots/channels/instagram/05_customize_instagram.PNG"
+          alt="Customizing the Instagram use case"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 6 — Add the required permission</h2>
-          <p>Add the required permission from the permissions area. This is the permission needed to support the Instagram/Facebook channel connection shown in the setup flow.</p>
-          <img src="../../screenshots/channels/instagram/06_add_pages_read_engagement_permission.PNG" alt="Adding the required permission for the Instagram/Facebook connection" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 6 — Add the required permission</h2>
+        <p>Add the required permission from the permissions area. This is the permission needed to support the
+          Instagram/Facebook channel connection shown in the setup flow.</p>
+        <img src="../../screenshots/channels/instagram/06_add_pages_read_engagement_permission.PNG"
+          alt="Adding the required permission for the Instagram/Facebook connection"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="webhook-url">
-          <h2>Step 7 — Add the Instagram webhook URL</h2>
-          <p>Paste the Instagram webhook URL from NexCognit into the Instagram API settings and then save the configuration.</p>
-          <img src="../../screenshots/channels/instagram/07_add_instagram_webhook_url.PNG" alt="Adding the Instagram webhook URL" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="webhook-url">
+        <h2>Step 7 — Add the Instagram webhook URL</h2>
+        <p>Paste the Instagram webhook URL from NexCognit into the Instagram API settings and then save the
+          configuration.</p>
+        <img src="../../screenshots/channels/instagram/07_add_instagram_webhook_url.PNG"
+          alt="Adding the Instagram webhook URL"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 8 — Open Facebook Page settings</h2>
-          <p>Open the settings area of the connected Facebook Page.</p>
-          <img src="../../screenshots/channels/instagram/08_open_facebook_page_settings.png" alt="Opening Facebook Page settings" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 8 — Open Facebook Page settings</h2>
+        <p>Open the settings area of the connected Facebook Page.</p>
+        <img src="../../screenshots/channels/instagram/08_open_facebook_page_settings.png"
+          alt="Opening Facebook Page settings"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="business-account-id">
-          <h2>Step 9 — Copy the Instagram Business Account ID</h2>
-          <p>The Instagram Business Account ID can be found from the page’s linked Instagram account settings, and this ID will be needed in NexCognit.</p>
-          <img src="../../screenshots/channels/instagram/09_copy_instagram_business_account_id.PNG" alt="Copying the Instagram Business Account ID" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="business-account-id">
+        <h2>Step 9 — Copy the Instagram Business Account ID</h2>
+        <p>The Instagram Business Account ID can be found from the page’s linked Instagram account settings, and this ID
+          will be needed in NexCognit.</p>
+        <img src="../../screenshots/channels/instagram/09_copy_instagram_business_account_id.PNG"
+          alt="Copying the Instagram Business Account ID"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Step 10 — Open Instagram channel settings in NexCognit</h2>
-          <p>Go to the NexCognit dashboard, open Channel Settings, and choose the Instagram channel configuration.</p>
-          <img src="../../screenshots/channels/instagram/10_open_nexcognit_instagram_channel_settings.PNG" alt="Opening NexCognit Instagram channel settings" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section">
+        <h2>Step 10 — Open Instagram channel settings in NexCognit</h2>
+        <p>Go to the NexCognit dashboard, open Channel Settings, and choose the Instagram channel configuration.</p>
+        <img src="../../screenshots/channels/instagram/10_open_nexcognit_instagram_channel_settings.PNG"
+          alt="Opening NexCognit Instagram channel settings"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section" id="connect-nexcognit">
-          <h2>Step 11 — Paste the Business Account ID and connect</h2>
-          <p>Paste the Instagram Business Account ID into NexCognit and complete the connection.</p>
-          <img src="../../screenshots/channels/instagram/11_paste_business_account_id_and_connect.PNG" alt="Pasting the business account ID in NexCognit and connecting the channel" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+      <section class="content-section" id="connect-nexcognit">
+        <h2>Step 11 — Paste the Business Account ID and connect</h2>
+        <p>Paste the Instagram Business Account ID into NexCognit and complete the connection.</p>
+        <img src="../../screenshots/channels/instagram/11_paste_business_account_id_and_connect.PNG"
+          alt="Pasting the business account ID in NexCognit and connecting the channel"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>How Instagram works after setup</h2>
-          <p>Once the Instagram channel is connected, customers can start conversations through Instagram direct messages and NexCognit can respond with the configured assistant behavior. Those conversations can then be reviewed in the NexCognit workspace.</p>
-        </section>
+      <section class="content-section">
+        <h2>How Instagram works after setup</h2>
+        <p>Once the Instagram channel is connected, customers can start conversations through Instagram direct messages
+          and NexCognit can respond with the configured assistant behavior. Those conversations can then be reviewed in
+          the NexCognit workspace.</p>
+      </section>
 
-        <section class="content-section">
-          <h2>Things to know</h2>
-          <ul>
-            <li>Use the same Meta app that was created for the Facebook Messenger flow if that is how your setup is organized.</li>
-            <li>Make sure the Instagram Business Account is linked to the correct Facebook Page.</li>
-            <li>If the channel does not connect, confirm that the Business Account ID was pasted correctly and that the required permissions are granted.</li>
-          </ul>
-        </section>
-      </main>
-    </div>
-    <script src="../../assets/script.js"></script>
-  </body>
+      <section class="content-section">
+        <h2>Things to know</h2>
+        <ul>
+          <li>Use the same Meta app that was created for the Facebook Messenger flow if that is how your setup is
+            organized.</li>
+          <li>Make sure the Instagram Business Account is linked to the correct Facebook Page.</li>
+          <li>If the channel does not connect, confirm that the Business Account ID was pasted correctly and that the
+            required permissions are granted.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="../../assets/script.js"></script>
+</body>
+
 </html>

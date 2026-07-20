@@ -1,95 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Channels | NexCognit Docs</title>
-    <link rel="stylesheet" href="../../assets/style.css" />
-  </head>
-  <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="brand">NexCognit Docs</div>
-        <nav class="nav-links">
-          <a class="nav-link" href="../../index.html">Overview</a>
-          <a class="nav-link" href="../dashboard.html">Dashboard</a>
-          <a class="nav-link" href="../leads.html">Leads</a>
-          <a class="nav-link" href="../pipeline.html">Pipeline</a>
-          <a class="nav-link" href="../conversations.html">Conversations</a>
-          <a class="nav-link" href="../agent-config.html">Agent Config</a>
-          <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
-          <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
-          <a class="nav-link" href="../media-library.html">Media Library</a>
-          <a class="nav-link" href="../integrations.html">Integrations</a>
-          <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false" aria-controls="channels-nav">
-            <span>Channels</span>
-            <span class="nav-group-icon" aria-hidden="true"></span>
-          </button>
-          <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
-            <a class="nav-link active" href="index.html">Channel Overview</a>
-            <a class="nav-link" href="website-chat.html">Website</a>
-            <a class="nav-link" href="whatsapp.html">WhatsApp</a>
-            <a class="nav-link" href="telegram.html">Telegram</a>
-            <a class="nav-link" href="facebook-messenger.html">Facebook</a>
-            <a class="nav-link" href="instagram.html">Instagram</a>
-          </div>
-        </nav>
-      </aside>
-      <main class="main-content">
-        <header class="topbar">
-          <h1>Channels</h1>
-          <p>Channels are the communication sources that customers use to reach your business through NexCognit. By connecting a channel, you enable customer conversations to flow into the platform and be handled in a consistent way.</p>
-        </header>
 
-        <section class="content-section">
-          <h2>Channels overview</h2>
-          <p>NexCognit supports several customer communication channels so your team can meet customers where they already are. Once a channel is connected, messages can be managed inside NexCognit and Iris can respond automatically based on your configuration.</p>
-          <img src="../../screenshots/channels/01_channels_overview.PNG" alt="NexCognit channels overview" style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Channels | NexCognit Docs</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
 
-        <section class="content-section">
-          <h2>What Channels are in NexCognit</h2>
-          <p>Channels are the entry points for customer conversations. They connect your business messaging tools to NexCognit so incoming messages can be received, reviewed, and handled in one place.</p>
-        </section>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">NexCognit Docs</div>
+      <nav class="nav-links">
+        <a class="nav-link" href="../../index.html">Overview</a>
+        <a class="nav-link" href="../dashboard.html">Dashboard</a>
+        <a class="nav-link" href="../leads.html">Leads</a>
+        <a class="nav-link" href="../pipeline.html">Pipeline</a>
+        <a class="nav-link" href="../conversations.html">Conversations</a>
+        <a class="nav-link" href="../agent-config.html">Agent Config</a>
+        <a class="nav-link" href="../product-catalog.html">Product Catalog</a>
+        <a class="nav-link" href="../knowledge-base.html">Knowledge Base</a>
+        <a class="nav-link" href="../media-library.html">Media Library</a>
+        <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false"
+          aria-controls="integrations-nav">
+          <span>Integrations</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
 
-        <section class="content-section">
-          <h2>Why channel connections matter</h2>
-          <p>Connecting a channel is important because it allows customer messages to reach the right place and be processed quickly. A connected channel makes it easier for your team to manage interactions and for Iris to assist with replies.</p>
-        </section>
+        <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+          <a class="nav-link" href="../integrations.html">Integration Overview</a>
+          <a class="nav-link" href="../integrations/zoho-crm.html">Zoho CRM</a>
+          <a class="nav-link" href="../integrations/google-calendar.html">Google Calendar</a>
+        </div>
+        <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false"
+          aria-controls="channels-nav">
+          <span>Channels</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+          <a class="nav-link active" href="index.html">Channel Overview</a>
+          <a class="nav-link" href="website-chat.html">Website</a>
+          <a class="nav-link" href="whatsapp.html">WhatsApp</a>
+          <a class="nav-link" href="telegram.html">Telegram</a>
+          <a class="nav-link" href="facebook-messenger.html">Facebook</a>
+          <a class="nav-link" href="instagram.html">Instagram</a>
+        </div>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Channels</h1>
+        <p>Channels are the communication sources that customers use to reach your business through NexCognit. By
+          connecting a channel, you enable customer conversations to flow into the platform and be handled in a
+          consistent way.</p>
+      </header>
 
-        <section class="content-section">
-          <h2>What happens after a channel is connected</h2>
-          <ul>
-            <li>Customers can message through that channel.</li>
-            <li>Iris can respond automatically based on the configured behavior.</li>
-            <li>Conversations can be managed from NexCognit.</li>
-          </ul>
-        </section>
+      <section class="content-section">
+        <h2>Channels overview</h2>
+        <p>NexCognit supports several customer communication channels so your team can meet customers where they already
+          are. Once a channel is connected, messages can be managed inside NexCognit and Iris can respond automatically
+          based on your configuration.</p>
+        <img src="../../screenshots/channels/01_channels_overview.PNG" alt="NexCognit channels overview"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
 
-        <section class="content-section">
-          <h2>Supported channels</h2>
-          <ul>
-            <li><strong>Website Chat:</strong> Add a chat widget to your website so visitors can start conversations directly from your site.</li>
-            <li><strong>Telegram:</strong> Connect a Telegram bot so customers can reach your business through Telegram.</li>
-            <li><strong>Facebook Messenger:</strong> Connect your Facebook Page so Messenger conversations can be handled in NexCognit.</li>
-            <li><strong>WhatsApp:</strong> Connect WhatsApp as a customer communication channel for inbound messages.</li>
-            <li><strong>Instagram:</strong> Connect Instagram messaging so conversations can be managed through the platform.</li>
-          </ul>
-        </section>
+      <section class="content-section">
+        <h2>What Channels are in NexCognit</h2>
+        <p>Channels are the entry points for customer conversations. They connect your business messaging tools to
+          NexCognit so incoming messages can be received, reviewed, and handled in one place.</p>
+      </section>
 
-        <section class="content-section">
-          <h2>Next steps</h2>
-          <p>Each channel has its own setup guide in the documentation. Choose the channel you want to connect and follow the step-by-step instructions:</p>
-          <ul>
-            <li><a href="website-chat.html">Website Chat</a></li>
-            <li><a href="telegram.html">Telegram</a></li>
-            <li><a href="facebook-messenger.html">Facebook Messenger</a></li>
-            <li><a href="whatsapp.html">WhatsApp</a></li>
-            <li><a href="instagram.html">Instagram</a></li>
-          </ul>
-        </section>
-      </main>
-    </div>
-    <script src="../../assets/script.js"></script>
-  </body>
+      <section class="content-section">
+        <h2>Why channel connections matter</h2>
+        <p>Connecting a channel is important because it allows customer messages to reach the right place and be
+          processed quickly. A connected channel makes it easier for your team to manage interactions and for Iris to
+          assist with replies.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>What happens after a channel is connected</h2>
+        <ul>
+          <li>Customers can message through that channel.</li>
+          <li>Iris can respond automatically based on the configured behavior.</li>
+          <li>Conversations can be managed from NexCognit.</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Supported channels</h2>
+        <ul>
+          <li><strong>Website Chat:</strong> Add a chat widget to your website so visitors can start conversations
+            directly from your site.</li>
+          <li><strong>Telegram:</strong> Connect a Telegram bot so customers can reach your business through Telegram.
+          </li>
+          <li><strong>Facebook Messenger:</strong> Connect your Facebook Page so Messenger conversations can be handled
+            in NexCognit.</li>
+          <li><strong>WhatsApp:</strong> Connect WhatsApp as a customer communication channel for inbound messages.</li>
+          <li><strong>Instagram:</strong> Connect Instagram messaging so conversations can be managed through the
+            platform.</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Next steps</h2>
+        <p>Each channel has its own setup guide in the documentation. Choose the channel you want to connect and follow
+          the step-by-step instructions:</p>
+        <ul>
+          <li><a href="website-chat.html">Website Chat</a></li>
+          <li><a href="telegram.html">Telegram</a></li>
+          <li><a href="facebook-messenger.html">Facebook Messenger</a></li>
+          <li><a href="whatsapp.html">WhatsApp</a></li>
+          <li><a href="instagram.html">Instagram</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="../../assets/script.js"></script>
+</body>
+
 </html>
