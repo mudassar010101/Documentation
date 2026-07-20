@@ -438,3 +438,55 @@ body,
     right: 16px;
   }
 }
+
+/* ========================================
+   Copy Button
+======================================== */
+
+.copy-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 14px 16px;
+  border: 1px solid #dfe7f3;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.copy-box code {
+  flex: 1;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.copy-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #1d4ed8;
+}
+
+.info-box {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+  border-radius: 10px;
+  color: #334155;
+}
+
+.info-box strong {
+  color: #1e3a8a;
+}

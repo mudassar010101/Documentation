@@ -189,3 +189,16 @@ function setTheme(theme, options = {}) {
     }
   }
 }
+
+function copyToClipboard(elementId, button) {
+  const text = document.getElementById(elementId).textContent.trim();
+
+  navigator.clipboard.writeText(text).then(() => {
+    const original = button.textContent;
+    button.textContent = "Copied ✓";
+
+    setTimeout(() => {
+      button.textContent = original;
+    }, 2000);
+  });
+}

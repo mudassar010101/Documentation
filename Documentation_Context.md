@@ -1,6 +1,6 @@
 # NexCognit Documentation Context
 
-> This file contains the complete context of the NexCognit Documentation project. It is maintained so future work can continue without losing project knowledge or design decisions.
+> This document contains the complete project context for the NexCognit Documentation website. It should be reviewed before making any future changes to ensure consistency across the project.
 
 ---
 
@@ -12,29 +12,29 @@ NexCognit Documentation
 
 ## Product
 
-NexCognit is an AI Sales and Lead Management platform built around an AI assistant called Iris.
+NexCognit is an AI Sales and Lead Management platform powered by an AI assistant called Iris.
 
 The platform enables businesses to:
 
-- Capture leads from multiple channels
+- Capture leads from multiple communication channels
 - Answer customer questions automatically
-- Qualify leads before involving sales
-- Manage conversations from a single dashboard
-- Sync leads to Zoho CRM
-- Book meetings through Google Calendar
-- Automate customer follow-ups
+- Qualify leads using AI
+- Manage customer conversations
+- Sync leads with Zoho CRM
+- Schedule meetings using Google Calendar
+- Automate follow-up communication
 
 ## Documentation Purpose
 
-This documentation explains every feature of the NexCognit platform and provides screenshot-based setup guides for users configuring the platform.
+The documentation provides screenshot-based guides for every major feature inside the NexCognit platform.
 
-The documentation is intended to be professional, easy to follow, and suitable for beginners.
+The goal is to create professional, beginner-friendly documentation that helps users configure and understand the platform without technical knowledge.
 
 ---
 
 # 2. Documentation Structure
 
-Current documentation includes:
+## Core Pages
 
 - Overview
 - Dashboard
@@ -47,7 +47,13 @@ Current documentation includes:
 - Media Library
 - Integrations
 
-## Channels
+## Integration Pages
+
+- Integration Overview
+- Zoho CRM
+- Google Calendar
+
+## Channel Pages
 
 - Channel Overview
 - Website Chat
@@ -71,96 +77,177 @@ nexcognit-docs/
 │   └── script.js
 │
 ├── screenshots/
+│   ├── dashboard/
+│   ├── integrations/
+│   │   ├── zoho-crm/
+│   │   └── google-calendar/
+│   └── channels/
 │
 └── pages/
+    ├── integrations.html
+    ├── integrations/
+    │   ├── zoho-crm.html
+    │   └── google-calendar.html
+    └── channels/
 ```
 
 ---
 
-# 4. Screenshot Inventory
+# 4. Documentation Style
 
-Current screenshot collections:
+The documentation follows these principles:
 
-Dashboard
-
-Website Chat
-
-Telegram
-
-Facebook Messenger
-
-Instagram
-
-WhatsApp
-
-Agent Config
-
-Other platform pages
-
-All setup guides are screenshot-driven.
+- Customer-facing documentation
+- Beginner-friendly language
+- Screenshot-driven guides
+- Professional writing style
+- One action per step
+- Short and clear explanations
+- Consistent formatting
+- Responsive layout
+- Consistent page structure
 
 ---
 
-# 5. Documentation Standards
+# 5. Screenshot Standards
 
-Documentation follows these rules:
+Each guide should follow this format:
 
-- Customer-facing documentation.
-- Professional documentation style.
-- Beginner-friendly language.
-- Clear step-by-step instructions.
-- One action per step.
-- Short explanations.
-- Consistent formatting.
-- Existing screenshots are used.
-- No unnecessary technical language.
-- Documentation should remain consistent across every page.
+- Screenshot
+- Short explanation below
+- One action per step
+- Screenshots displayed in chronological order
 
----
+Screenshot styling:
 
-# 6. Screenshot Standards
-
-Current documentation style:
-
-- Screenshot first.
-- Explanation immediately below the screenshot.
-- Screenshots appear in setup order.
-- Screenshots use consistent spacing.
-- Rounded corners.
-- Soft shadows.
-- Responsive image sizing.
+- Rounded corners
+- Soft border
+- Consistent spacing
+- Responsive width
 
 ---
 
-# 7. UI Design Decisions
+# 6. UI Design Decisions
 
-Current UI improvements completed:
-
-✓ Typography improved
-
-✓ Spacing improved
-
-✓ Sidebar redesigned
+Current UI includes:
 
 ✓ Sticky sidebar
 
-✓ Sidebar scrolls independently
+✓ Independent sidebar scrolling
 
-✓ Screenshot presentation improved
+✓ Responsive layout
 
-General design goals:
+✓ Improved typography
 
-- Modern
-- Clean
-- Professional
-- Documentation-focused
-- Responsive
+✓ Improved spacing
 
-Future UI work should preserve the existing design language.
+✓ Better screenshot presentation
+
+✓ Dark Mode
+
+✓ Expandable navigation
+
+Current sidebar structure:
+
+Overview
+
+Dashboard
+
+Leads
+
+Pipeline
+
+Conversations
+
+Agent Config
+
+Product Catalog
+
+Knowledge Base
+
+Media Library
+
+▶ Integrations
+- Integration Overview
+- Zoho CRM
+- Google Calendar
+
+▶ Channels
+- Channel Overview
+
+▶ Website
+- Introduction
+- Configure Widget
+- Widget Appearance
+- Copy Embed Code
+- Test Widget
+
+- WhatsApp
+- Telegram
+- Facebook Messenger
+- Instagram
+
+Navigation automatically expands the active section.
 
 ---
 
-# 8. Deployment
+# 7. Integrations Documentation
+
+Completed:
+
+✓ Integration Overview
+
+✓ Zoho CRM Setup Guide
+
+✓ Google Calendar Setup Guide
+
+Each integration includes:
+
+- Prerequisites
+- Step-by-step setup
+- Screenshot for every step
+- Verification step
+- How it works
+- Things to know
+
+---
+
+# 8. Channel Documentation
+
+Completed:
+
+✓ Channel Overview
+
+✓ Website Chat
+
+✓ WhatsApp
+
+✓ Telegram
+
+✓ Facebook Messenger
+
+✓ Instagram
+
+Website documentation contains nested navigation for individual setup sections.
+
+---
+
+# 9. JavaScript Features
+
+Current script.js functionality includes:
+
+- Active sidebar highlighting
+- Nested navigation
+- Expandable sidebar groups
+- LocalStorage remembers expanded sections
+- Scroll Spy
+- Global Dark / Light Theme
+- Theme persistence
+- Responsive navigation
+
+---
+
+# 10. Deployment
 
 Repository:
 
@@ -170,19 +257,17 @@ Hosting:
 
 Vercel
 
-Deployment Method:
+Deployment Flow:
 
 GitHub → Automatic Vercel Deployment
 
-Whenever changes are pushed to GitHub, Vercel automatically redeploys the documentation.
+Every push automatically redeploys the documentation website.
 
 ---
 
-# 9. Current Progress
+# 11. Current Progress
 
 Completed
-
-✓ Documentation structure
 
 ✓ Overview
 
@@ -202,11 +287,17 @@ Completed
 
 ✓ Media Library
 
-✓ Integrations
+✓ Integration Overview
+
+✓ Zoho CRM
+
+✓ Google Calendar
 
 ✓ Channel Overview
 
 ✓ Website Chat
+
+✓ WhatsApp
 
 ✓ Telegram
 
@@ -214,104 +305,90 @@ Completed
 
 ✓ Instagram
 
-✓ WhatsApp
+✓ Responsive sidebar
 
-✓ GitHub Deployment
+✓ Expandable navigation
 
-✓ Vercel Deployment
+✓ Active page highlighting
 
-✓ Screenshot verification
-
-✓ Broken image fixes
-
-✓ UI Typography improvements
-
-✓ Sidebar improvements
+✓ Theme Toggle
 
 ✓ Screenshot styling
 
+✓ Typography improvements
+
+✓ GitHub deployment
+
+✓ Vercel deployment
+
 ---
 
-# 10. Known Project Decisions
+# 12. Project Decisions
 
-Important decisions made during development:
+Important decisions:
 
-- Billing documentation is not included.
-
+- Billing documentation is excluded.
 - Documentation is screenshot-driven.
-
-- Existing folder structure should not be changed unless required.
-
-- New documentation pages should follow the same design and writing style.
-
-- Screenshot filenames should remain consistent.
-
-- UI improvements should be completed step-by-step instead of redesigning everything at once.
-
-- Large design changes should be avoided without review.
+- Folder structure should remain unchanged.
+- Every page should use the same layout.
+- Navigation must remain consistent.
+- Screenshot naming should remain consistent.
+- UI improvements should be incremental.
+- Avoid unnecessary redesigns.
+- Keep documentation beginner-friendly.
 
 ---
 
-# 11. Pending Work
+# 13. Pending Improvements
 
-Current priority:
+Future enhancements:
 
-Continue improving the documentation UI.
-
-Possible future improvements:
-
-- Content cards
-
-- Buttons
-
-- Tables
-
-- Callout boxes
-
-- Mobile optimization
-
-- Search functionality
-
-- Previous / Next navigation
-
+- Previous / Next page navigation
 - Breadcrumb navigation
-
-- Final design polish
+- Search functionality
+- Callout / Tip boxes
+- Tables for feature comparison
+- Better Overview page design
+- Mobile optimization
+- Final UI polish
 
 ---
 
-# 12. Future Chat Instructions
+# 14. Instructions for Future Work
 
-When continuing this project:
+Before continuing development:
 
 - Read this file first.
-
-- Preserve the existing documentation style.
-
 - Preserve the folder structure.
-
-- Do not redesign the documentation.
-
-- Improve features incrementally.
-
-- Keep explanations beginner-friendly.
-
-- Use screenshot-based documentation whenever screenshots exist.
-
-- Maintain consistency across every page.
+- Preserve the writing style.
+- Preserve screenshot order.
+- Keep navigation consistent.
+- Use the existing CSS classes.
+- Do not redesign pages unnecessarily.
+- Follow the same documentation pattern for all future pages.
+- Test all links before deployment.
 
 ---
 
-# 13. Changelog
+# 15. Changelog
 
-## Initial Version
+## Version 1
 
-- Documentation completed.
-- GitHub deployment completed.
-- Vercel deployment completed.
-- Image path issues resolved.
-- Screenshot styling improved.
-- Sidebar improved.
-- Typography improved.
+- Initial documentation completed
+- GitHub deployment
+- Vercel deployment
+- Sidebar improvements
+- Typography improvements
+- Screenshot styling improvements
 
-Future updates should be recorded here.
+## Version 2
+
+- Added expandable Integrations section
+- Added Google Calendar documentation
+- Added Zoho CRM documentation
+- Improved sidebar consistency
+- Added Dark Mode
+- Added active navigation highlighting
+- Added Scroll Spy
+- Improved nested sidebar navigation
+- Fixed relative path issues across integration pages

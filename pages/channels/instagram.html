@@ -136,12 +136,44 @@
       </section>
 
       <section class="content-section" id="webhook-url">
-        <h2>Step 7 — Add the Instagram webhook URL</h2>
-        <p>Paste the Instagram webhook URL from NexCognit into the Instagram API settings and then save the
-          configuration.</p>
+        <h2>Step 7 — Configure the Instagram Webhook</h2>
+
+        <p>
+          To receive Instagram Direct Messages, Meta requires a
+          <strong>Callback URL</strong> and a
+          <strong>Verify Token</strong>.
+        </p>
+
+        <p>
+          Copy the Callback URL below and paste it into the
+          <strong>Callback URL</strong> field in the Meta Developer Portal.
+        </p>
+
+        <div class="copy-box">
+          <code id="igWebhook">
+      https://portal.nexcognit.com/webhook/insta-dm
+    </code>
+
+          <button class="copy-btn" onclick="copyToClipboard('igWebhook', this)">
+            Copy
+          </button>
+        </div>
+
+        <div class="info-box">
+          <strong>Verify Token</strong><br>
+          Enter any secure value as your Verify Token. Keep a copy of this value, as
+          the same token must be used whenever Meta asks you to verify the webhook.
+        </div>
+
+        <p>
+          After entering the Callback URL and Verify Token, click
+          <strong>Verify and Save</strong> (or <strong>Save</strong>, depending on the
+          Meta Developer Portal screen) to apply the webhook configuration.
+        </p>
+
         <img src="../../screenshots/channels/instagram/07_add_instagram_webhook_url.PNG"
-          alt="Adding the Instagram webhook URL"
-          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+          alt="Configure the Instagram webhook"
+          style="max-width:100%;border:1px solid #dfe7f3;border-radius:12px;margin-top:18px;" />
       </section>
 
       <section class="content-section">

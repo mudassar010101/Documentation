@@ -216,12 +216,45 @@
       </section>
 
       <section class="content-section" id="webhook-token">
-        <h2>Step 18 — Add the webhook URL and verify token</h2>
-        <p>Add the Messenger webhook URL from NexCognit here, along with a verify token. The verify token can be a
-          random value, but it should be saved and used consistently if required by the webhook setup.</p>
+        <h2>Step 18 — Configure the Messenger Webhook</h2>
+
+        <p>
+          To receive Facebook Messenger events, Meta requires a
+          <strong>Callback URL</strong> and a
+          <strong>Verify Token</strong>.
+        </p>
+
+        <p>
+          Copy the Callback URL below and paste it into the
+          <strong>Callback URL</strong> field in the Meta Developer Portal.
+        </p>
+
+        <div class="copy-box">
+          <code id="fbWebhook">
+https://portal.nexcognit.com/webhook/messenger-events
+    </code>
+
+          <button class="copy-btn" onclick="copyToClipboard('fbWebhook', this)">
+            Copy
+          </button>
+        </div>
+
+        <div class="info-box">
+          <strong>Verify Token</strong><br>
+          Enter any secure value as your Verify Token. Make sure you save this value,
+          as the same Verify Token must be used later during the webhook verification
+          process.
+        </div>
+
+        <p>
+          After entering the Callback URL and Verify Token, click
+          <strong>Verify and Save</strong> (or <strong>Save</strong>, depending on the
+          Meta Developer Portal screen) to complete the webhook configuration.
+        </p>
+
         <img src="../../screenshots/channels/facebook-messenger/18_enter_webhook_url_and_verify_token.PNG"
-          alt="Entering the webhook URL and verify token"
-          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+          alt="Configure the Facebook Messenger webhook"
+          style="max-width:100%;border:1px solid #dfe7f3;border-radius:12px;margin-top:18px;" />
       </section>
 
       <section class="content-section" id="connect-page">
