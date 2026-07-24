@@ -324,10 +324,199 @@ https://portal.nexcognit.com/webhook/messenger-events
 
       <section class="content-section" id="connect-nexcognit">
         <h2>Step 27 — Paste the Page ID and access token in NexCognit</h2>
-        <p>Paste the Facebook Page ID and the generated Page Access Token into the NexCognit Facebook channel
-          configuration to complete the connection.</p>
+        <p>In the NexCognit Facebook channel configuration, complete the following:</p>
+        <ul>
+          <li>Paste the Facebook Page ID.</li>
+          <li>Paste the generated Page Access Token.</li>
+          <li>Click Connect.</li>
+        </ul>
+        <p>If the Facebook channel connects successfully, continue to Step 28.</p>
         <img src="../../screenshots/channels/facebook-messenger/27_paste_page_id_and_access_token.PNG"
           alt="Pasting the Page ID and access token in NexCognit"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 28 — Confirm the Facebook Channel Connection</h2>
+        <p>Check the Facebook channel status in NexCognit.</p>
+        <p>If the status shows Connected, your setup is complete and you do not need to continue with the remaining
+          troubleshooting steps.</p>
+        <p>If the channel does not connect, continue to Step 29.</p>
+        <img src="../../screenshots/channels/facebook-messenger/28_channel_connected_successfully.PNG"
+          alt="Confirming the Facebook channel connection status"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 29 — If the Connection Fails</h2>
+        <p>Sometimes Meta does not immediately activate a newly generated Page Access Token. This is usually caused
+          by one of the following:</p>
+        <ul>
+          <li>Meta permission propagation.</li>
+          <li>Meta security checks.</li>
+          <li>Temporary Meta platform restrictions.</li>
+        </ul>
+        <p>This is not an issue with NexCognit. If you receive this message, continue with the troubleshooting steps
+          below.</p>
+        <img src="../../screenshots/channels/facebook-messenger/29_connection_error_message.PNG"
+          alt="Facebook connection error message"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 30 — Open Graph API Explorer</h2>
+        <p>Return to Meta for Developers. Open Tools, then select Graph API Explorer.</p>
+        <img src="../../screenshots/channels/facebook-messenger/30_open_graph_api_explorer.PNG"
+          alt="Opening Graph API Explorer in Meta for Developers"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 31 — Generate a New Access Token</h2>
+        <p>Click Generate Access Token.</p>
+        <img src="../../screenshots/channels/facebook-messenger/31_generate_access_token.PNG"
+          alt="Generating a new access token in Graph API Explorer"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 32 — Continue with Your Facebook Account</h2>
+        <p>Continue with your Facebook account.</p>
+        <img src="../../screenshots/channels/facebook-messenger/32_continue_with_facebook_account.PNG"
+          alt="Continuing with a Facebook account in Graph API Explorer"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 33 — Select the Facebook Page</h2>
+        <p>Select the Facebook Page you want to connect, then click Continue.</p>
+        <img src="../../screenshots/channels/facebook-messenger/33_select_facebook_page.PNG"
+          alt="Selecting the Facebook Page in Graph API Explorer"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 34 — Save the Permissions</h2>
+        <p>Click Save.</p>
+        <img src="../../screenshots/channels/facebook-messenger/34_save_permissions.PNG"
+          alt="Saving permissions in Graph API Explorer"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 35 — Confirm the Permissions</h2>
+        <p>Click Got It.</p>
+        <img src="../../screenshots/channels/facebook-messenger/35_got_it_confirmation.PNG"
+          alt="Confirming permissions in Graph API Explorer"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 36 — Copy the Updated Page Access Token</h2>
+        <p>A refreshed Page Access Token has now been generated. Copy the new token.</p>
+        <img src="../../screenshots/channels/facebook-messenger/36_copy_updated_page_access_token.PNG"
+          alt="Copying the updated Page Access Token"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 37 — Paste the Updated Token in NexCognit</h2>
+        <p>Return to the NexCognit Dashboard and open Channel Settings. Paste the newly generated Page Access Token,
+          then click Connect.</p>
+        <img src="../../screenshots/channels/facebook-messenger/37_paste_updated_token_in_nexcognit.PNG"
+          alt="Pasting the updated Page Access Token in NexCognit"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 38 — If the Connection Still Fails</h2>
+        <p>In many cases, the refreshed token generated through Graph API Explorer will immediately resolve the
+          issue.</p>
+        <p>If your Facebook channel now shows Connected, your setup is complete and you can ignore the remaining
+          troubleshooting steps.</p>
+        <p>If you still receive an error, continue with the next steps.</p>
+        <img src="../../screenshots/channels/facebook-messenger/38_connection_still_failed.PNG"
+          alt="Facebook connection still failing after retry"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 39 — Open My Apps</h2>
+        <p>Return to Meta for Developers and click My Apps.</p>
+        <img src="../../screenshots/channels/facebook-messenger/39_open_my_apps.PNG"
+          alt="Opening My Apps in Meta for Developers"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 40 — Select Your Meta App</h2>
+        <p>Open the Meta App you created earlier.</p>
+        <img src="../../screenshots/channels/facebook-messenger/40_select_meta_app.PNG"
+          alt="Selecting the Meta app"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 41 — Open Use Cases</h2>
+        <p>From the left sidebar, open Use Cases.</p>
+        <img src="../../screenshots/channels/facebook-messenger/41_open_use_cases.PNG"
+          alt="Opening Use Cases in the Meta app"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 42 — Customize Meta</h2>
+        <p>Click Customize Meta.</p>
+        <img src="../../screenshots/channels/facebook-messenger/42_customize_meta.PNG"
+          alt="Customize Meta option in the Use Cases panel"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 43 — Open Messenger API Settings</h2>
+        <p>Open Messenger API Settings.</p>
+        <img src="../../screenshots/channels/facebook-messenger/43_open_messenger_api_settings.PNG"
+          alt="Opening Messenger API Settings"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 44 — Generate a New Page Access Token</h2>
+        <p>Generate a brand new Page Access Token again. Generating a fresh token from Messenger API Settings
+          usually resolves Meta propagation delays.</p>
+        <img src="../../screenshots/channels/facebook-messenger/44_generate_new_page_access_token.PNG"
+          alt="Generating a new Page Access Token from Messenger API Settings"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 45 — Copy the New Page Access Token</h2>
+        <p>Copy the newly generated Page Access Token.</p>
+        <img src="../../screenshots/channels/facebook-messenger/45_copy_new_page_access_token.PNG"
+          alt="Copying the new Page Access Token"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 46 — Paste the Final Token and Connect</h2>
+        <p>Return to the NexCognit Dashboard. Replace the old token with the newly generated token, then click
+          Connect.</p>
+        <img src="../../screenshots/channels/facebook-messenger/46_paste_final_token_and_connect.PNG"
+          alt="Pasting the final Page Access Token in NexCognit"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 47 — Confirm the Facebook Messenger Connection</h2>
+        <p>The Facebook Messenger channel should now display Connected.</p>
+        <p>Thank you for your patience while completing the Facebook Messenger setup. Meta may occasionally require
+          additional time to activate newly generated Page Access Tokens because of permission propagation and
+          platform security checks. This behavior is controlled by Meta and does not indicate an issue with
+          NexCognit.</p>
+        <p>Once the token has been refreshed and accepted by Meta, your Facebook Messenger channel is successfully
+          connected and ready to receive conversations.</p>
+        <img src="../../screenshots/channels/facebook-messenger/47_facebook_channel_connected_successfully.PNG"
+          alt="Facebook Messenger channel connected successfully"
           style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
       </section>
 
