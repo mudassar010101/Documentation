@@ -56,6 +56,9 @@
             <a class="nav-link" href="instagram.html#webhook-url">Add Webhook URL</a>
             <a class="nav-link" href="instagram.html#business-account-id">Copy Business Account ID</a>
             <a class="nav-link" href="instagram.html#connect-nexcognit">Connect to NexCognit</a>
+            <a class="nav-link" href="instagram.html#verify-connected-status">Verify Connected Status</a>
+            <a class="nav-link" href="instagram.html#connect-instagram-dm">Connect Instagram DM (Outbound)</a>
+            <a class="nav-link" href="instagram.html#outbound-connected">Outbound Connected</a>
           </div>
         </div>
       </nav>
@@ -209,6 +212,51 @@
           style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
       </section>
 
+      <section class="content-section" id="verify-connected-status">
+        <h2>Step 12 — Verify Connected Status</h2>
+        <p>Return to the Instagram channel settings in NexCognit and confirm that the status shows Connected with the
+          toggle switched on. This confirms that inbound Instagram messages can now reach NexCognit.</p>
+        <img src="../../screenshots/channels/instagram/12_verify_connected_status.PNG"
+          alt="Verifying that the Instagram channel status shows Connected"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section" id="connect-instagram-dm">
+        <h2>Step 13 — Connect Instagram DM from Integrations</h2>
+        <p>Instagram also needs a separate outbound connection so NexCognit can send replies back through Instagram
+          Direct Messages. In the NexCognit sidebar, open Integrations, locate Instagram DM, and click Connect to begin
+          this second connection.</p>
+        <img src="../../screenshots/channels/instagram/13_open_integrations_connect_instagram_dm.PNG"
+          alt="Opening Integrations and connecting Instagram DM"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 14 — Sign In and Allow Access via Composio</h2>
+        <p>Composio will prompt you to sign in to your Instagram/Facebook account and request permission to access it.
+          Review the request and allow access to continue.</p>
+        <img src="../../screenshots/channels/instagram/14_composio_login_and_allow_access.PNG"
+          alt="Signing in and allowing access through Composio"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 15 — Composio Confirms the Connection</h2>
+        <p>Once access is granted, Composio displays a confirmation that the account was connected successfully.</p>
+        <img src="../../screenshots/channels/instagram/15_composio_connected_successfully.PNG"
+          alt="Composio confirming a successful connection"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section" id="outbound-connected">
+        <h2>Step 16 — Confirm Instagram DM Shows as Connected</h2>
+        <p>Return to the Integrations page in NexCognit and confirm that Instagram DM now also shows a Connected status.
+          With both inbound and outbound connected, Instagram is fully set up and ready to test.</p>
+        <img src="../../screenshots/channels/instagram/16_integrations_instagram_dm_connected.PNG"
+          alt="Confirming Instagram DM shows as connected on the Integrations page"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
       <section class="content-section">
         <h2>How Instagram works after setup</h2>
         <p>Once the Instagram channel is connected, customers can start conversations through Instagram direct messages
@@ -224,6 +272,9 @@
           <li>Make sure the Instagram Business Account is linked to the correct Facebook Page.</li>
           <li>If the channel does not connect, confirm that the Business Account ID was pasted correctly and that the
             required permissions are granted.</li>
+          <li>Instagram requires both an inbound connection (Steps 1–12) and an outbound connection through
+            Integrations (Steps 13–16). If customers can message in but NexCognit cannot reply, confirm the outbound
+            Instagram DM connection in Integrations.</li>
         </ul>
       </section>
     </main>
