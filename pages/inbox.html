@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inbox | NexCognit Docs</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">NexCognit Docs</div>
+      <nav class="nav-links">
+        <a class="nav-link" href="../index.html">Overview</a>
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="inbox.html">Inbox</a>
+        <a class="nav-link" href="leads.html">Leads</a>
+        <a class="nav-link" href="pipeline.html">Pipeline</a>
+        <a class="nav-link" href="agent-config.html">AI agent</a>
+        <a class="nav-link" href="knowledge-base.html">Knowledge base</a>
+        <button class="nav-group" type="button" data-nav-toggle="channels" aria-expanded="false"
+          aria-controls="channels-nav">
+          <span>Channels</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="channels-nav" data-nav-panel="channels">
+          <a class="nav-link" href="channels/index.html">Channel Overview</a>
+          <a class="nav-link" href="channels/website-chat.html">Website</a>
+          <a class="nav-link" href="channels/whatsapp.html">WhatsApp</a>
+          <a class="nav-link" href="channels/telegram.html">Telegram</a>
+          <a class="nav-link" href="channels/facebook-messenger.html">Facebook</a>
+          <a class="nav-link" href="channels/instagram.html">Instagram</a>
+        </div>
+        <button class="nav-group" type="button" data-nav-toggle="integrations" aria-expanded="false"
+          aria-controls="integrations-nav">
+          <span>Integrations</span>
+          <span class="nav-group-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-subnav" id="integrations-nav" data-nav-panel="integrations">
+          <a class="nav-link" href="integrations.html">Integration Overview</a>
+          <a class="nav-link" href="integrations/zoho-crm.html">Zoho CRM</a>
+          <a class="nav-link" href="integrations/google-calendar.html">Google Calendar</a>
+        </div>
+        <a class="nav-link" href="plan-credits.html">Plan &amp; credits</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Inbox</h1>
+        <p>The Inbox is where you read and reply to all customer conversations in one place. Messages from every
+          connected channel, such as Website chat, WhatsApp, Messenger, and Instagram, appear here.</p>
+      </header>
+
+      <section class="content-section">
+        <h2>Inbox overview</h2>
+        <p>The left side shows your list of conversations. The right side shows the conversation you select, so you
+          can read it and reply.</p>
+        <img src="../screenshots/inbox/01_inbox_overview.PNG" alt="NexCognit inbox overview"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Find a conversation</h2>
+        <p>Use the <strong>Search conversations</strong> box at the top of the list to find a conversation quickly.
+        </p>
+        <p>Use the tabs below the search box to filter the list:</p>
+        <ul>
+          <li><strong>All:</strong> Every conversation.</li>
+          <li><strong>Needs you:</strong> Conversations waiting for a reply from your team.</li>
+          <li><strong>Open:</strong> Conversations that are still active.</li>
+          <li><strong>Closed:</strong> Conversations that are finished.</li>
+        </ul>
+        <p>The number next to a tab shows how many conversations are in it.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>What each conversation shows</h2>
+        <ul>
+          <li><strong>Name:</strong> The customer's name. If the name is not known yet, it shows as
+            <strong>Website visitor</strong>.</li>
+          <li><strong>Channel icon:</strong> A small icon on the profile picture shows which channel the message came
+            from.</li>
+          <li><strong>Lead temperature:</strong> A label such as Hot, Warm, Cold, or New shows how ready the customer
+            is to buy.</li>
+          <li><strong>Time:</strong> When the last message arrived.</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Read and reply</h2>
+        <p>Click any conversation in the list. It opens on the right side, where you can read the full chat and send
+          a reply.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Things to know</h2>
+        <ul>
+          <li>Check the <strong>Needs you</strong> tab often so no customer is left waiting.</li>
+          <li>All channels share one Inbox, so you do not need to open each app separately.</li>
+          <li>The lead temperature label helps you decide which conversations to answer first.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="../assets/script.js"></script>
+</body>
+
+</html>
