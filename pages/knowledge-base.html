@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Knowledge Base | NexCognit Docs</title>
+  <title>Knowledge base | NexCognit Docs</title>
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 
@@ -48,69 +48,85 @@
     </aside>
     <main class="main-content">
       <header class="topbar">
-        <h1>Knowledge Base</h1>
-        <p>The Knowledge Base is where you add business information that helps Iris answer customer questions more
-          accurately. It turns generic AI responses into more useful, company-specific support.</p>
+        <h1>Knowledge base</h1>
+        <p>The Knowledge base is the information your agent searches before every reply. Add your website, FAQs, price
+          lists, and guides so your agent answers like your best salesperson.</p>
       </header>
 
       <section class="content-section">
-        <h2>Knowledge Base overview</h2>
-        <p>The Knowledge Base gives your team a simple way to feed Iris with the information it needs to respond with
-          confidence. By adding trusted content, you help ensure that customer conversations stay relevant, helpful, and
-          aligned with your business.</p>
-        <img src="../screenshots/knowledge-base/01_knowledge_base_overview.PNG" alt="NexCognit Knowledge Base overview"
+        <h2>Knowledge base overview</h2>
+        <p>At the top right you can see how many files and links you have added, and how much searchable information
+          your agent has.</p>
+        <img src="../screenshots/knowledge-base/01_knowledge_base_overview.PNG" alt="NexCognit knowledge base page"
           style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
       </section>
 
       <section class="content-section">
-        <h2>What the Knowledge Base is used for</h2>
-        <p>The Knowledge Base is used to store information that Iris can reference during conversations. This may
-          include product details, pricing guidance, policies, service descriptions, FAQs, or internal business context
-          that should shape answers.</p>
-      </section>
-
-      <section class="content-section">
-        <h2>Adding content by uploading files</h2>
-        <p>You can upload files such as PDFs, documents, or other written materials to add information to the Knowledge
-          Base. This is a practical option when you already have structured content that should be reused in
-          conversations.</p>
-      </section>
-
-      <section class="content-section">
-        <h2>Adding content by importing website URLs</h2>
-        <p>If your business information lives on a website, you can import URLs directly into the Knowledge Base. This
-          helps bring in up-to-date content from your site and keeps the knowledge source connected to your
-          public-facing information.</p>
-      </section>
-
-      <section class="content-section">
-        <h2>Adding content by pasting text manually</h2>
-        <p>For quick updates or one-off information, you can add content by pasting text directly into the Knowledge
-          Base. This is useful for FAQs, product notes, or short guidance that needs to be made available immediately.
-        </p>
-      </section>
-
-      <section class="content-section">
-        <h2>How Iris uses Knowledge Base content</h2>
-        <p>When a customer asks a question, Iris can use the content in the Knowledge Base to build a more relevant
-          answer. Instead of relying only on general AI knowledge, Iris can respond using the specific information your
-          business has provided.</p>
-      </section>
-
-      <section class="content-section">
-        <h2>Why accurate business information matters</h2>
-        <p>Keeping your Knowledge Base accurate is essential because Iris’s responses depend on the quality of the
-          information it can access. Outdated or incomplete content can lead to confusion, incorrect answers, or missed
-          opportunities to help the customer effectively.</p>
-      </section>
-
-      <section class="content-section">
-        <h2>Best practices</h2>
+        <h2>Train your agent and Knowledge score</h2>
+        <p>The <strong>Train your agent</strong> bar shows three steps: <strong>Data added</strong>,
+          <strong>Agent learning</strong>, and <strong>Ready to assist you</strong>. When all three are done, your
+          agent has learned what you added.</p>
+        <p>The <strong>Knowledge score</strong> shows how complete your knowledge base is. It checks for:</p>
         <ul>
-          <li>Keep content current so Iris can answer with confidence.</li>
-          <li>Use clear, business-specific information rather than generic wording.</li>
-          <li>Upload or update content regularly as products and policies change.</li>
-          <li>Review important topics such as pricing, availability, and support policies often.</li>
+          <li>Your website</li>
+          <li>Company profile, menu, or price list</li>
+          <li>FAQs or policies</li>
+          <li>Products and prices</li>
+          <li>Your agent's instructions</li>
+        </ul>
+        <p>Items with a green tick are done. Use the button under the list to add what is missing.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Import from your website</h2>
+        <p>NexCognit reads the page you enter and the pages it links to, then keeps the text for your agent.</p>
+        <ol>
+          <li>Enter the web address in <strong>Page address</strong>.</li>
+          <li>Optionally, give it a name in <strong>Name</strong>, for example "Pricing page".</li>
+          <li>Click <strong>Import</strong>.</li>
+        </ol>
+      </section>
+
+      <section class="content-section">
+        <h2>Upload documents</h2>
+        <p>Drag files into the box, or click it to choose files from your computer. You can upload PDF, Word, Excel,
+          CSV, text, or Markdown files, up to 20 MB each.</p>
+        <p>For spreadsheets, a header row at the top helps your agent understand the data.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Products &amp; prices</h2>
+        <p>Add what you sell and what it costs, so your agent can quote prices and offer products to customers.</p>
+        <ul>
+          <li><strong>Add product:</strong> Add products one by one.</li>
+          <li><strong>Import sheet:</strong> Add many products at once from a spreadsheet.</li>
+        </ul>
+        <p>After adding products, sync them so your agent knows about them.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Your added content</h2>
+        <ul>
+          <li><strong>Documents:</strong> Lists the files you have uploaded.</li>
+          <li><strong>Website &amp; imported content:</strong> Lists the websites you have imported, how many pages
+            were read, and whether your agent has <strong>Learned</strong> them. Use <strong>Re-import</strong> after
+            you update your website, or the edit and delete buttons to change or remove it.</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Test your knowledge base</h2>
+        <p>Type a question the way a customer would, for example "How much does the starter plan cost?", and click
+          <strong>Search</strong>. You will see which information your agent would use to answer.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Things to know</h2>
+        <ul>
+          <li>The number of websites and documents you can add depends on your plan. The limit is shown under each
+            box.</li>
+          <li>Re-import your website whenever you change it, so your agent always has the latest information.</li>
+          <li>Use <strong>Test your knowledge base</strong> to check answers before customers ask.</li>
         </ul>
       </section>
     </main>
