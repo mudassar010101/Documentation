@@ -49,22 +49,76 @@
     <main class="main-content">
       <header class="topbar">
         <h1>WhatsApp</h1>
-        <p>WhatsApp lets your business receive and respond to customer conversations through Meta’s messaging platform.
-          This guide walks through the setup process from the initial connection to the final activation inside
-          NexCognit.</p>
+        <p>Connect WhatsApp so your AI agent can reply to customers who message your business on WhatsApp. There are
+          three ways to connect. This guide explains each one.</p>
       </header>
 
       <section class="content-section">
-        <h2>Prerequisites</h2>
+        <h2>Which option should I choose?</h2>
         <ul>
-          <li>You already have access to a NexCognit workspace.</li>
-          <li>You have a Facebook account and access to the relevant Meta business account.</li>
-          <li>You are ready to connect a WhatsApp Business account and test it after setup.</li>
+          <li><strong>Scan QR code:</strong> The fastest way. Link your existing WhatsApp in seconds, like WhatsApp
+            Web. Available for your trial.</li>
+          <li><strong>Pairing code:</strong> No camera needed. Enter your number and type a code into WhatsApp.
+            Available for your trial.</li>
+          <li><strong>Official WhatsApp API:</strong> Meta's verified Business API. The safest option for your
+            number, and best for long-term business use.</li>
         </ul>
       </section>
 
+      <section class="content-section">
+        <h2>Step 1 — Open WhatsApp setup</h2>
+        <p>Go to <strong>Channels</strong> in the sidebar and click <strong>Set up</strong> on the WhatsApp card.</p>
+        <img src="../../screenshots/channels/whatsapp/new_01_click_setup.PNG" alt="WhatsApp card on the Channels page"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Step 2 — Choose how to connect</h2>
+        <p>Pick one of the three options. You can switch to a different option later.</p>
+        <img src="../../screenshots/channels/whatsapp/new_02_choose_method.PNG" alt="The three ways to connect WhatsApp"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Option A — Scan QR code</h2>
+        <h3>Step 1 — Scan the code with your phone</h3>
+        <p>Click <strong>Scan QR code</strong>. A QR code appears on the screen.</p>
+        <p>On your phone, open WhatsApp and go to <strong>Settings → Linked devices → Link a device</strong>, then
+          scan the code. The code refreshes by itself, so keep the page open.</p>
+        <img src="../../screenshots/channels/whatsapp/new_03_scan_qr.PNG" alt="Scan QR code screen"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        <h3>Step 2 — Check that WhatsApp is connected</h3>
+        <p>When the connection works, you see <strong>WhatsApp is connected</strong> and the channel shows
+          <strong>Live</strong>.</p>
+        <img src="../../screenshots/channels/whatsapp/new_04_qr_connected.PNG" alt="WhatsApp connected screen"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+      </section>
+
+      <section class="content-section">
+        <h2>Option B — Pairing code</h2>
+        <h3>Step 1 — Enter your WhatsApp number</h3>
+        <p>Click <strong>Pairing code</strong>. Type your WhatsApp number with the country code, then click
+          <strong>Get code</strong>.</p>
+        <img src="../../screenshots/channels/whatsapp/new_05_pairing_enter_number.PNG" alt="Enter your WhatsApp number"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        <h3>Step 2 — Enter the code in WhatsApp</h3>
+        <p>An 8-character code appears on the screen. On your phone, open WhatsApp and go to <strong>Settings → Linked
+          devices → Link a device</strong>. Tap <strong>Link with phone number instead</strong> and type the code.</p>
+        <img src="../../screenshots/channels/whatsapp/new_06_pairing_code.PNG" alt="Pairing code screen"
+          style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
+        <h3>Step 3 — Check that WhatsApp is connected</h3>
+        <p>When the connection works, you see <strong>WhatsApp is connected</strong> and the channel shows
+          <strong>Live</strong>, the same as in Option A.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Option C — Official WhatsApp API</h2>
+        <p>Click <strong>Official WhatsApp API</strong> and follow the steps below. You need a Facebook account,
+          access to your Meta business account, and a business phone number that can receive a verification code.</p>
+      </section>
+
       <section class="content-section" id="introduction">
-        <h2>Step 1 — Open the WhatsApp setup entry</h2>
+        <h3>Official API · Step 1 — Open the WhatsApp setup entry</h3>
         <p>Open the WhatsApp channel section in NexCognit to begin the connection flow. This is the starting point for
           linking your business account to the platform.</p>
         <img src="../../screenshots/channels/whatsapp/01_introduction.PNG"
@@ -73,7 +127,7 @@
       </section>
 
       <section class="content-section" id="facebook-connection">
-        <h2>Step 2 — Connect with Facebook</h2>
+        <h3>Official API · Step 2 — Connect with Facebook</h3>
         <p>Choose the option to connect the channel using Facebook. This begins the Meta-based setup needed for WhatsApp
           Business integration.</p>
         <img src="../../screenshots/channels/whatsapp/02_connect_with_facebook.PNG"
@@ -82,7 +136,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 3 — Open Facebook login</h2>
+        <h3>Official API · Step 3 — Open Facebook login</h3>
         <p>Continue through the login flow and open the Facebook sign-in step for the business account you want to use.
         </p>
         <img src="../../screenshots/channels/whatsapp/03_open_facebook_login.PNG" alt="Opening the Facebook login flow"
@@ -90,7 +144,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 4 — Continue the Facebook login process</h2>
+        <h3>Official API · Step 4 — Continue the Facebook login process</h3>
         <p>Follow the Facebook login prompts until the connection flow is ready to continue.</p>
         <img src="../../screenshots/channels/whatsapp/04_continue_facebook_login.PNG"
           alt="Continuing the Facebook login process"
@@ -98,7 +152,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 5 — Select the business page</h2>
+        <h3>Official API · Step 5 — Select the business page</h3>
         <p>Select the Facebook Page that will be associated with your WhatsApp Business setup.</p>
         <img src="../../screenshots/channels/whatsapp/05_select_business_page.PNG"
           alt="Selecting the business page for the connection"
@@ -106,14 +160,14 @@
       </section>
 
       <section class="content-section" id="business-selection">
-        <h2>Step 6 — Select the business ID</h2>
+        <h3>Official API · Step 6 — Select the business ID</h3>
         <p>Choose the business account or business ID that should own the WhatsApp connection.</p>
         <img src="../../screenshots/channels/whatsapp/06_select_business_id.jpeg" alt="Selecting the business ID"
           style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
       </section>
 
       <section class="content-section">
-        <h2>Step 7 — Choose the WhatsApp Business account</h2>
+        <h3>Official API · Step 7 — Choose the WhatsApp Business account</h3>
         <p>Select the WhatsApp Business account that will be used for customer conversations.</p>
         <img src="../../screenshots/channels/whatsapp/07_select_whatsapp_business_account.jpeg"
           alt="Choosing the WhatsApp Business account"
@@ -121,7 +175,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 8 — Create a WhatsApp Business account if needed</h2>
+        <h3>Official API · Step 8 — Create a WhatsApp Business account if needed</h3>
         <p>If a Business account is not already available, create one before continuing with the setup.</p>
         <img src="../../screenshots/channels/whatsapp/08_create_whatsapp_business_account.jpeg"
           alt="Creating a WhatsApp Business account"
@@ -129,7 +183,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 9 — Continue account creation</h2>
+        <h3>Official API · Step 9 — Continue account creation</h3>
         <p>Continue through the prompts to finish creating the WhatsApp Business account.</p>
         <img src="../../screenshots/channels/whatsapp/09_continue_account_creation.jpeg"
           alt="Continuing the WhatsApp Business account creation flow"
@@ -137,7 +191,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 10 — Choose a business category</h2>
+        <h3>Official API · Step 10 — Choose a business category</h3>
         <p>Select the category that best describes your business so the account can be configured correctly.</p>
         <img src="../../screenshots/channels/whatsapp/10_choose_business_category.jpeg"
           alt="Choosing a business category for the WhatsApp Business account"
@@ -145,7 +199,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 11 — Select the industry category</h2>
+        <h3>Official API · Step 11 — Select the industry category</h3>
         <p>Choose the industry category that matches the nature of your business.</p>
         <img src="../../screenshots/channels/whatsapp/11_select_industry_category.PNG"
           alt="Selecting the industry category"
@@ -153,7 +207,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 12 — Select the other category option</h2>
+        <h3>Official API · Step 12 — Select the other category option</h3>
         <p>If your business does not fit a common category, choose the appropriate alternative option.</p>
         <img src="../../screenshots/channels/whatsapp/12_select_other_category.jpeg"
           alt="Selecting the other category option"
@@ -161,7 +215,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 13 — Continue after category selection</h2>
+        <h3>Official API · Step 13 — Continue after category selection</h3>
         <p>Proceed to the next step after confirming the business category details.</p>
         <img src="../../screenshots/channels/whatsapp/13_continue_after_category.jpeg"
           alt="Continuing after selecting the business category"
@@ -169,7 +223,7 @@
       </section>
 
       <section class="content-section" id="phone-verification">
-        <h2>Step 14 — Add a new phone number</h2>
+        <h3>Official API · Step 14 — Add a new phone number</h3>
         <p>Choose to add a phone number that will be used for the WhatsApp Business account.</p>
         <img src="../../screenshots/channels/whatsapp/14_add_new_phone_number.PNG"
           alt="Adding a new phone number for WhatsApp"
@@ -177,21 +231,21 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 15 — Enter the phone number</h2>
+        <h3>Official API · Step 15 — Enter the phone number</h3>
         <p>Enter the phone number that should be associated with the WhatsApp Business account.</p>
         <img src="../../screenshots/channels/whatsapp/15_enter_phone_number.jpeg" alt="Entering the phone number"
           style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
       </section>
 
       <section class="content-section">
-        <h2>Step 16 — Select the country code</h2>
+        <h3>Official API · Step 16 — Select the country code</h3>
         <p>Choose the correct country code before continuing with number verification.</p>
         <img src="../../screenshots/channels/whatsapp/16_select_country_code.PNG" alt="Selecting the country code"
           style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
       </section>
 
       <section class="content-section">
-        <h2>Step 17 — Open the phone number field</h2>
+        <h3>Official API · Step 17 — Open the phone number field</h3>
         <p>Open the field where the phone number is entered so the setup can continue.</p>
         <img src="../../screenshots/channels/whatsapp/17_open_phone_number_field.jpeg"
           alt="Opening the phone number field"
@@ -199,7 +253,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 18 — Enter the phone number again</h2>
+        <h3>Official API · Step 18 — Enter the phone number again</h3>
         <p>Complete the phone number entry and confirm that it is the intended business number.</p>
         <img src="../../screenshots/channels/whatsapp/18_enter_phone_number_again.jpeg"
           alt="Entering the phone number again"
@@ -207,7 +261,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 19 — Continue after phone number entry</h2>
+        <h3>Official API · Step 19 — Continue after phone number entry</h3>
         <p>Proceed once the phone number has been provided and verified as the correct value.</p>
         <img src="../../screenshots/channels/whatsapp/19_continue_after_phone_number.jpeg"
           alt="Continuing after the phone number is entered"
@@ -215,7 +269,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 20 — Open the verification code field</h2>
+        <h3>Official API · Step 20 — Open the verification code field</h3>
         <p>When prompted, open the verification code field so the number can be confirmed.</p>
         <img src="../../screenshots/channels/whatsapp/20_open_verification_code_field.PNG"
           alt="Opening the verification code field"
@@ -223,7 +277,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 21 — Enter the verification code</h2>
+        <h3>Official API · Step 21 — Enter the verification code</h3>
         <p>Enter the code sent to the phone number to verify the WhatsApp Business account.</p>
         <img src="../../screenshots/channels/whatsapp/21_enter_verification_code.PNG"
           alt="Entering the verification code"
@@ -231,7 +285,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 22 — Continue after verification</h2>
+        <h3>Official API · Step 22 — Continue after verification</h3>
         <p>Continue the setup flow after the verification code has been accepted.</p>
         <img src="../../screenshots/channels/whatsapp/22_continue_after_verification.PNG"
           alt="Continuing after verification"
@@ -239,7 +293,7 @@
       </section>
 
       <section class="content-section" id="finish-setup">
-        <h2>Step 23 — Confirm the account connection</h2>
+        <h3>Official API · Step 23 — Confirm the account connection</h3>
         <p>Confirm that the account is connected and ready to be used for business messaging.</p>
         <img src="../../screenshots/channels/whatsapp/23_confirm_account_connection.jpeg"
           alt="Confirming the WhatsApp account connection"
@@ -247,14 +301,14 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 24 — Finish setup</h2>
+        <h3>Official API · Step 24 — Finish setup</h3>
         <p>Complete the remaining setup steps so the WhatsApp Business account is fully available.</p>
         <img src="../../screenshots/channels/whatsapp/24_finish_setup.jpeg" alt="Finishing the WhatsApp setup"
           style="max-width: 100%; border: 1px solid #dfe7f3; border-radius: 12px; margin-top: 12px;" />
       </section>
 
       <section class="content-section">
-        <h2>Step 25 — Enable the WhatsApp channel in NexCognit</h2>
+        <h3>Official API · Step 25 — Enable the WhatsApp channel in NexCognit</h3>
         <p>Once the account is ready, enable the WhatsApp channel in NexCognit so it can receive incoming messages.</p>
         <img src="../../screenshots/channels/whatsapp/25_enable_whatsapp_channel.PNG"
           alt="Enabling the WhatsApp channel in NexCognit"
@@ -262,7 +316,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 26 — Continue configuration</h2>
+        <h3>Official API · Step 26 — Continue configuration</h3>
         <p>Continue through the configuration screen so the connection is finalized inside NexCognit.</p>
         <img src="../../screenshots/channels/whatsapp/26_continue_configuration.PNG"
           alt="Continuing the WhatsApp channel configuration"
@@ -270,7 +324,7 @@
       </section>
 
       <section class="content-section">
-        <h2>Step 27 — Return to NexCognit dashboard</h2>
+        <h3>Official API · Step 27 — Return to NexCognit dashboard</h3>
         <p>Return to the NexCognit dashboard once the setup is complete. The WhatsApp channel is then ready to use for
           customer conversations.</p>
         <img src="../../screenshots/channels/whatsapp/27_return_to_nexcognit_dashboard.PNG"
@@ -279,18 +333,13 @@
       </section>
 
       <section class="content-section">
-        <h2>How WhatsApp works after setup</h2>
-        <p>Once the WhatsApp channel is connected, customers can message your business directly through WhatsApp and
-          NexCognit can receive and manage those conversations in one workspace. This makes it easier to keep customer
-          communication organized and responsive.</p>
-      </section>
-
-      <section class="content-section">
-        <h2>Things to know</h2>
+        <h2>After you connect</h2>
         <ul>
-          <li>Use a business phone number that can receive verification codes.</li>
-          <li>Keep your Meta and WhatsApp Business account permissions up to date.</li>
-          <li>After setup, test the channel with a sample message to confirm that the connection works as expected.</li>
+          <li>Send a test message to your WhatsApp number from another phone to check that your agent replies.</li>
+          <li>With <strong>Scan QR code</strong> and <strong>Pairing code</strong>, your agent replies to incoming
+            messages only. Automated follow-ups are off for these options.</li>
+          <li>To stop, click <strong>Disconnect</strong> on the WhatsApp setup page.</li>
+          <li>All WhatsApp conversations appear in your <strong>Inbox</strong>.</li>
         </ul>
       </section>
     </main>
