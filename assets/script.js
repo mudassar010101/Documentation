@@ -1,3 +1,10 @@
+(function () {
+  const icon = document.createElement("link");
+  icon.rel = "icon";
+  icon.href = new URL("logo.webp", document.currentScript.src).href;
+  document.head.appendChild(icon);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initActiveNavigation();

@@ -52,12 +52,23 @@ a:hover {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 28px;
   padding: 0 6px 18px;
   letter-spacing: -0.03em;
   border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.brand::before {
+  content: "";
+  width: 34px;
+  height: 30px;
+  flex-shrink: 0;
+  background: url("logo.webp") center / contain no-repeat;
 }
 
 .nav-links {
