@@ -65,8 +65,11 @@ a:hover {
 
 .brand::before {
   content: "";
+  display: inline-block;
+  vertical-align: middle;
   width: 34px;
   height: 30px;
+  margin-right: 10px;
   flex-shrink: 0;
   background: url("logo.webp") center / contain no-repeat;
 }
