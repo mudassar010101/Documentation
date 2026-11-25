@@ -84,7 +84,8 @@ nexcognit-docs/
 │
 ├── assets/
 │   ├── style.css
-│   └── script.js
+│   ├── script.js
+│   └── logo.webp
 │
 ├── screenshots/
 │   ├── dashboard/
@@ -171,7 +172,8 @@ Before saving a screenshot:
 
 - Crop out the browser bar and the Windows taskbar
 - Hide private details: real phone numbers, email addresses, tokens, keys
-- Cover QR codes and pairing codes (pairing codes may be partly blurred)
+- Blur most of any full token (bot tokens, Page access tokens), keeping only the first and last few characters. Tokens cut off by a small box in Meta screens are fine to leave
+- Partly blur pairing codes. WhatsApp QR codes expire within seconds, so covering them is optional
 - Hide the agent's real instructions text on the AI agent page
 
 Screenshot naming:
@@ -201,6 +203,8 @@ Current UI includes:
 ✓ Dark Mode
 
 ✓ Expandable navigation
+
+✓ NexCognit logo in the sidebar and browser tab (assets/logo.webp, added through style.css and script.js, so no page needs editing)
 
 Current sidebar structure (the same on every page):
 
@@ -276,9 +280,7 @@ Completed:
 
 ✓ Instagram
 
-Not yet updated:
-
-- Facebook Messenger (still the older guide that starts from Meta for Developers; needs checking against the new UI)
+✓ Facebook Messenger (Meta setup steps, then Channels → Set up on the Messenger card; tokens are updated with Update token → Update and reconnect)
 
 WhatsApp guide covers three ways to connect:
 
@@ -366,6 +368,8 @@ Completed
 
 ✓ Instagram
 
+✓ Facebook Messenger
+
 ✓ New sidebar on every page
 
 ✓ Responsive sidebar
@@ -384,9 +388,11 @@ Completed
 
 ✓ Vercel deployment
 
+✓ NexCognit logo
+
 Remaining
 
-- Facebook Messenger guide (update to the new UI)
+- None. All pages and guides match the new UI.
 
 ---
 
@@ -412,7 +418,6 @@ Important decisions:
 
 Future enhancements:
 
-- Update the Facebook Messenger guide to the new UI
 - Setup guides for Gmail and Facebook Page
 - Previous / Next page navigation
 - Breadcrumb navigation
@@ -479,3 +484,7 @@ Before continuing development:
 - Updated Telegram, Website Chat, Instagram, Zoho CRM and Google Calendar guides
 - Replaced "Iris" with "your agent" in guides
 - Replaced all screenshots with the new UI and hid private details
+- Updated the Facebook Messenger guide to the new UI
+- Added the open conversation view and Lead details to the Inbox page
+- Added the NexCognit logo to the sidebar and browser tab (assets/logo.webp, set in style.css and script.js)
+- Blurred bot tokens and Page access tokens in screenshots
